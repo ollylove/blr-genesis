@@ -1,0 +1,70 @@
+.homepage-introduction {
+    background: $light-grey;
+    padding: 40px 0 32px 0;
+    
+    h3 {
+        @include font-style('open sans', 33px, 800);
+        margin: 0 0 25px 0;
+        padding-left: 12px;
+    }
+
+    p {
+        @include font-style('open sans', 25px, 300);
+        margin: 0;
+        padding-left: 12px;
+        line-height: 150%;
+        max-width: 1070px;
+
+        i {
+            display: block;
+            @include font-style('open sans', 18px, 300);
+            padding-top: 13px;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        h3 {
+            font-size: 28px;
+            padding-left: 0;
+        }
+
+        p {
+            font-size: 20px;
+            padding-left: 0;
+            max-width: none;
+
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        padding: 30px 0;
+
+        h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: 980px) {
+        margin-bottom: 20px;
+    }
+    @media (max-width: 767px) {
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+

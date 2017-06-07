@@ -1,0 +1,50 @@
+.btn {
+    border: 2px solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 21px 50px;
+    background: none;
+    @include font-style('open sans', 18px, 400);
+    text-align: center;
+
+    @media (max-width: 1199px) {
+        letter-spacing: 0;
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+    @media (max-width: 767px) {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    &.light-blue-btn {
+        @include btn($light-blue);
+    }
+
+    &.dark-blue-btn {
+        @include btn($dark-blue);
+    }
+
+    &.white-btn {
+        @include btn($white);
+    }
+
+    &.white-hover-btn {
+        &:hover {
+            @include btn($white);
+        }
+    }
+
+    &.light-blue-hover-btn {
+        &:hover {
+            @include btn($light-blue);
+        }
+    }
+
+    &.dark-blue-hover-btn {
+        &:hover {
+            @include btn($dark-blue);
+        }
+    }
+}

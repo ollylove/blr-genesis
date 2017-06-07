@@ -1,0 +1,319 @@
+.homepage-stripe {
+    overflow: hidden;
+    padding-top: 46px;
+
+    .stripe-btn {
+        width: 50%;
+        padding: 0 20px;
+        max-height: 273px;
+        white-space: nowrap;
+
+        .stripe-block {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        img {
+            &.man-image {
+                margin-left: 50px;
+                margin-right: 25px;
+                width: 33%;
+                top: -36px;
+            }
+
+            &.phone-image {
+                width: 46%;
+                margin: -22px 0 0 -85px;
+            }
+        }
+
+        h5 {
+            @include font-style('oswald', 57px, 400);
+            margin: 0;
+            padding: 20px 20px 0 20px;
+            text-align: left;
+            max-width: 400px;
+            line-height: 116%;
+        }
+
+        p {
+            @include font-style('open sans', 36px, 300);
+            margin: 0;
+            padding: 5px 20px 20px 20px;
+            line-height: 120%;
+            text-align: left;
+            text-transform: uppercase;
+            max-width: 310px;
+            white-space: normal;
+        }
+
+        .store-btns {
+            margin-left: -25px;
+            margin-top: 4px;
+            transform: translateY(100%);
+
+            img {
+                display: block;
+                width: 173px;
+                margin: 0 0 15px 0;
+            }
+        }
+    }
+
+    @media (max-width: 1549px) {
+        .stripe-btn {
+            h5 {
+                font-size: 52px;
+            }
+
+            p {
+                font-size: 32px;
+                padding-top: 10px;
+            }
+        }
+    }
+    @media (max-width: 1509px) {
+        .stripe-btn {
+            max-height: 240px;
+
+            h5 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 30px;
+            }
+
+            img {
+                &.phone-image {
+                    margin-left: -120px;
+                }
+            }
+
+            .store-btns {
+                margin-top: 0;
+                transform: translateY(90%);
+
+                img {
+                    width: 160px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1319px) {
+        .stripe-btn {
+            h5 {
+                font-size: 46px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            p {
+                font-size: 26px;
+                line-height: 130%;
+                padding-left: 0;
+                padding-right: 0;
+                max-width: 270px;
+            }
+
+            .store-btns {
+                transform: translateY(100%);
+
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1199px) {
+        .stripe-btn {
+            max-height: 200px;
+
+            img {
+                &.man-image {
+                    margin-left: 0;
+                }
+            }
+
+            h5 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 130%;
+                padding-left: 0;
+                padding-right: 0;
+                max-width: 245px;
+            }
+
+            .store-btns {
+                transform: translateY(70%);
+
+                img {
+                    width: 145px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1109px) {
+        .stripe-btn {
+            img {
+                &.phone-image {
+                    margin-left: -105px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1049px) {
+        .stripe-btn {
+            max-height: 180px;
+
+            h5 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 20px;
+                max-width: 225px;
+            }
+
+            .store-btns {
+                transform: translateY(55%);
+            }
+        }
+    }
+    @media (max-width: 980px) {
+        .stripe-btn {
+            width: 100%;
+            max-height: 205px;
+
+            img {
+                &.man-image {
+                    width: 24%;
+                }
+
+                &.phone-image {
+                    margin-left: 0;
+                }
+            }
+
+            h5 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 26px;
+                max-width: 225px;
+            }
+
+            .store-btns {
+                margin-left: 10%;
+                transform: translateY(75%);
+            }
+        }
+    }
+    @media (max-width: 899px) {
+        .stripe-btn {
+            max-height: 220px;
+
+            img {
+                &.phone-image {
+                    margin-left: -10%;
+                }
+            }
+
+            .store-btns {
+                margin-left: 5%;
+                transform: translateY(83%);
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .stripe-btn {
+            img {
+                &.man-image {
+                    width: 180px;
+                }
+            }
+        }
+    }
+    @media (max-width: 699px) {
+        .stripe-btn {
+            .store-btns {
+                margin-left: 0;
+            }
+        }
+    }
+    @media (max-width: 699px) {
+        .stripe-btn {
+            img {
+                &.phone-image {
+                    display: none;
+                }
+            }
+
+            .store-btns {
+                transform: none;
+                vertical-align: bottom;
+                margin-bottom: 25px;
+
+                img {
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+    }
+    @media (max-width: 699px) {
+        .stripe-btn {
+            max-height: 185px;
+
+            img {
+                &.man-image {
+                    width: 155px;
+                    margin-right: 20px;
+                }
+            }
+
+            h5 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 22px;
+            }
+        }
+    }
+    @media (max-width: 699px) {
+        padding-top: 2px;
+
+        .stripe-btn {
+            max-height: none;
+
+            .stripe-block {
+                display: block;
+            }
+
+            img {
+                &.man-image {
+                    display: none;
+                }
+            }
+
+            p {
+                max-width: none;
+            }
+
+            .store-btns {
+                text-align: left;
+
+                img {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 2px;
+                    width: 134px;
+                }
+            }
+        }
+    }
+}

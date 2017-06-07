@@ -1,0 +1,94 @@
+.header-homepage {
+    h1 {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 118px 0 65px 0;
+
+        span {
+            display: block;
+            line-height: 105%;
+            text-transform: uppercase;
+            @include font-style('Oswald', 120px, 700);
+        }
+        @media (max-width: 1199px) {
+            padding: 60px 0;
+
+            span {
+                font-size: 110px;
+            }
+        }
+        @media (max-width: 991px) {
+            padding: 50px 0;
+
+            span {
+                font-size: 90px;
+            }
+        }
+        @media (max-width: 767px) {
+            padding: 30px 0;
+
+            span {
+                font-size: 80px;
+            }
+        }
+        @media (max-width: 599px) {
+            padding: 0 0 30px 0;
+
+            span {
+                font-size: 70px;
+            }
+        }
+    }
+
+    .homepage-searchbar {
+        max-width: 860px;
+        margin: 0 auto;
+        padding-bottom: 86px;
+        white-space: nowrap;
+        overflow: visible;
+        @media (max-width: 991px) {
+            padding-bottom: 70px;
+        }
+        @media (max-width: 767px) {
+            padding-bottom: 40px;
+        }
+        @media (max-width: 599px) {
+            white-space: normal;
+        }
+
+        input, .btn {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        input {
+            background: $white;
+            border: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            font-size: 23px;
+            padding: 15px 27px;
+            margin: 0 25px 0 0;
+            width: 85%;
+            @media (max-width: 1349px) {
+                width: 70%;
+            }
+            @media (max-width: 1199px) {
+                font-size: 16px;
+                padding: 15px;
+                width: 60%;
+            }
+            @media (max-width: 991px) {
+                width: 50%;
+            }
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
+            @media (max-width: 599px) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

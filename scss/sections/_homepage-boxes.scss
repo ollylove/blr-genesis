@@ -1,0 +1,144 @@
+.homepage-boxes {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 488px 20px 45px 20px;
+    width: calc(33.3% - 40px);
+    margin: 30px 20px 0 20px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 56%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparentize($dark-blue, 0.2);
+        z-index: 0;
+        transition: top 0.3s linear;
+    }
+
+    h6 {
+        @include font-style('Open sans', 46px, 800);
+        margin: 0 0 5px 0;
+        white-space: nowrap;
+    }
+
+    p {
+        @include font-style('open sans', 30px, 400);
+        margin: 0 0 43px 0;
+        text-transform: uppercase;
+    }
+
+    .btn {
+        opacity: 0;
+        visibility: hidden;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    &:hover {
+        &:after {
+            top: 0;
+        }
+
+        .btn {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    @media (max-width: 1729px) {
+        h6 {
+            font-weight: 700;
+        }
+    }
+    @media (max-width: 1669px) {
+        h6 {
+            font-size: 42px;
+        }
+    }
+    @media (max-width: 1529px) {
+        padding: 450px 20px 20px 20px;
+
+        h6 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 28px;
+        }
+
+        .btn {
+            margin-left: 0;
+        }
+    }
+    @media (max-width: 1409px) {
+        padding-top: 400px;
+
+        h6 {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+    @media (max-width: 1309px) {
+        padding-top: 350px;
+
+        h6 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 1199px) {
+        padding-top: 300px;
+
+        h6 {
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    @media (max-width: 1079px) {
+        padding-top: 320px;
+
+        h6 {
+            font-size: 26px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 17px;
+        }
+    }
+    @media (max-width: 991px) {
+        padding-top: 300px;
+
+        h6 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 980px) {
+        width: calc(100% - 40px);
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,17 @@
+$white: #fff;
+$black: #000;
+$light-blue: #1da4dc;
+$dark-blue: #002750;
+$light-grey: #eee;
+$typography: $dark-blue;
+
+@mixin font-style($font-family, $font-size, $font-weight) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin btn($color) {
+    color: $color;
+    border-color: $color;
+}

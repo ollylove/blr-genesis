@@ -1,0 +1,169 @@
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 0;
+    padding: 25px 20px;
+
+    .logo {
+        display: block;
+
+        img {
+            display: block;
+            padding-left: 77px;
+            height: 42px;
+            @media (max-width: 1659px) {
+                padding-left: 0;
+            }
+            @media (max-width: 1309px) {
+                height: 36px;
+            }
+            @media (max-width: 1119px) {
+                height: 31px;
+            }
+            @media (max-width: 330px) {
+                height: 28px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            position: absolute;
+            left: 20px;
+            z-index: 2;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+
+            a {
+                display: block;
+                margin: 0;
+                padding: 4px 34px;
+                font-size: 13px;
+                text-transform: uppercase;
+                color: $white;
+                line-height: 100%;
+                letter-spacing: 1px;
+
+                &:hover {
+                    color: $light-blue;
+                }
+
+                @media (max-width: 1599px) {
+                    padding: 4px 30px;
+                }
+                @media (max-width: 1505px) {
+                    padding: 4px 25px;
+                }
+                @media (max-width: 1419px) {
+                    padding: 10px 20px;
+                    font-size: 12px;
+                }
+                @media (max-width: 1249px) {
+                    padding: 10px 15px;
+                }
+                @media (max-width: 1179px) {
+                    font-size: 11px;
+                }
+                @media (max-width: 1119px) {
+                    padding: 5px 0 10px 20px;
+                }
+            }
+        }
+        @media (max-width: 991px) {
+            width: calc(100% + 40px);
+            margin-left: -20px;
+            margin-right: -20px;
+            max-height: 50px;
+            padding-top: 50px;
+            overflow: hidden;
+            transition: all 0.3s linear;
+            cursor: pointer;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 20px;
+                z-index: 1;
+                width: 40px;
+                height: 35px;
+                background: linear-gradient(
+                                $white 5px,
+                                transparent 5px, transparent 14px,
+                                $white 14px, $white 19px,
+                                transparent 19px, transparent 28px,
+                                $white 28px, $white 33px,
+                                transparent 33px
+                            );
+            }
+
+            li {
+                width: 100%;
+                background: transparentize($white, 0.1);
+                opacity: 0;
+                transition: opacity 0.3s linear;
+
+                &:first-of-type {
+                    padding-top: 13px;
+                }
+
+                &:last-of-type {
+                    padding-bottom: 13px;
+                }
+
+                &.search a {
+                    background: transparentize($light-blue, 0.7);
+                }
+
+                a {
+                    text-align: center;
+                    padding: 0;
+                    font-size: 16px;
+                    transition: all 0.3s linear;
+                    overflow: hidden;
+                    opacity: 0;
+                    color: $dark-blue;
+                    font-weight: 400;
+                }
+            }
+
+            &:hover, &.active {
+                &:before {
+                    background: linear-gradient(
+                                    $light-blue 5px,
+                                    transparent 5px, transparent 14px,
+                                    $light-blue 14px, $light-blue 19px,
+                                    transparent 19px, transparent 28px,
+                                    $light-blue 28px, $light-blue 33px,
+                                    transparent 33px
+                    );
+                }
+            }
+
+            &.active {
+                max-height: 500px;
+                overflow: visible;
+
+                li {
+                    opacity: 1;
+
+                    a {
+                        padding: 13px 0;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

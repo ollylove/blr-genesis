@@ -1,0 +1,33 @@
+// import fonts
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Oswald:400,700');
+
+// import the basic layout and colors
+
+@import "skeleton/variables-mixins";
+@import "skeleton/normalize";
+@import "skeleton/skeleton";
+@import "skeleton/typography";
+
+// import the menu
+
+@import "headers/menu";
+
+// import all headers
+
+@import "headers/header";
+@import "headers/header-homepage";
+
+// import elements and components
+
+@import "elements/buttons";
+
+// import all sections
+
+@import "sections/homepage-introduction";
+@import "sections/homepage-boxes";
+@import "sections/homepage-stripe";
+
+// import footer
+
+@import "footer/footer";
