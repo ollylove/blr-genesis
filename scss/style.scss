@@ -18,10 +18,12 @@
 @import "headers/header";
 @import "headers/header-homepage";
 @import "headers/header-news";
+@import "headers/header-news-inner";
 
 // import elements and components
 
 @import "elements/buttons";
+@import "elements/news-navigation-btns";
 
 // import all sections
 
@@ -30,7 +32,7 @@
 @import "sections/homepage-stripe";
 @import "sections/news-filter";
 @import "sections/news-articles";
-@import "sections/news-navigation-btns";
+@import "sections/news-inner-article";
 
 // import footer
 

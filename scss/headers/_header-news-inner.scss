@@ -1,0 +1,73 @@
+.header-news-inner {
+    padding-bottom: 323px;
+
+    h1, h2 {
+        margin: 0 auto;
+        line-height: 100%;
+        width: 84%;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        @include font-style('oswald', 56px, 700);
+        padding-top: 153px;
+    }
+
+    h1 {
+        @include font-style('oswald', 88px, 700);
+    }
+
+    @media (max-width: 1499px) {
+        h2 {
+            font-size: 50px;
+            padding-top: 120px;
+        }
+
+        h1 {
+            font-size: 70px;
+            line-height: 120%;
+        }
+    }
+    @media (max-width: 1199px) {
+        padding-bottom: 185px;
+
+        h2 {
+            font-size: 40px;
+            padding-top: 50px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 56px;
+            width: 100%;
+        }
+    }
+    @media (max-width: 991px) {
+        h2 {
+            font-size: 30px;
+            padding-top: 30px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 115px;
+
+        h2 {
+            padding-top: 10px;
+        }
+    }
+    @media (max-width: 699px) {
+        h1 {
+            font-size: 34px;
+        }
+    }
+    @media (max-width: 400px) {
+        h2 {
+            padding-top: 0;
+            line-height: 120%;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.news-inner-article {
+    width: calc(84% - 30px);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 5% 8.3% 4% 8.3%;
+    margin: -288px auto 50px auto;
+
+    h3 {
+        @include font-style('oswald', 49px, 400);
+        margin: 0 0 78px 0;
+        line-height: 120%;
+    }
+
+    p {
+        @include font-style('open sans', 21px, 300);
+        line-height: 187%;
+        margin: 0;
+        padding: 0 0 40px 0;
+        width: 85%;
+
+        &.news-intro {
+            @include font-style('oswald', 28px, 400);
+            line-height: 140%;
+            border-left: 12px solid $dark-blue;
+            padding: 5px 0 15px 40px;
+            margin: 0 0 45px 0;
+        }
+    }
+
+    @media (max-width: 1499px) {
+        padding: 5% 5% 4% 5%;
+
+        h3 {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        p {
+            width: 100%;
+            font-size: 18px;
+            padding-bottom: 30px;
+            line-height: 170%;
+
+            &.news-intro {
+                font-size: 24px;
+                padding: 5px 0 5px 20px;
+            }
+        }
+    }
+    @media (max-width: 1199px) {
+        padding: 4% 4% 3% 4%;
+        width: calc(100% - 40px);
+        margin: -170px auto 50px auto;
+
+        h3 {
+            font-size: 34px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 16px;
+            padding-bottom: 20px;
+            line-height: 150%;
+
+            &.news-intro {
+                font-size: 20px;
+                border-left-width: 8px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        padding: 30px 30px 10px 30px;
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 767px) {
+        margin: -100px auto 50px auto;
+
+        h3 {
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 14px;
+
+            &.news-intro {
+                font-size: 18px;
+                padding-left: 15px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    @media (max-width: 400px) {
+        padding: 20px 20px 5px 20px;
+
+        h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            line-height: 140%;
+        }
+
+        p {
+            padding-bottom: 15px;
+
+            &.news-intro {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
