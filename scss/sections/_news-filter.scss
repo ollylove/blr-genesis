@@ -1,0 +1,158 @@
+.news-filter {
+    button {
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px 5px 0 5px;
+        padding: 20px 0 20px 1.5%;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        border: 0;
+        text-align: left;
+        @include font-style('open sans', 20px, 400);
+        line-height: 120%;
+        width: calc(14% - 10px);
+        white-space: nowrap;
+        overflow: hidden;
+        background: $light-grey;
+        color: $light-blue;
+
+        span {
+            display: inline-block;
+            border-left: 10px solid $light-blue;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            margin-left: 15px;
+            vertical-align: middle;
+            top: -2px;
+            transition: all 0.3s linear;
+        }
+
+        &:hover {
+            background: darken($light-blue, 10%);
+            color: $white;
+
+            span {
+                border-left-color: $white;
+            }
+        }
+
+        &.active, &.all-active {
+            padding: 20px 50px;
+            letter-spacing: 2px;
+            background: $light-blue;
+            color: $white;
+            font-weight: 300;
+
+            span {
+                border-left-color: $white;
+            }
+        }
+
+        &.all-active {
+            width: calc(33.3% - 10px);
+
+            &:hover {
+                background: darken($light-blue, 10%);
+            }
+        }
+
+        &.active {
+            width: calc(72% - 10px);
+            cursor: text;
+
+            span {
+                transform: rotate(90deg);
+            }
+        }
+
+        @media (max-width: 1499px) {
+            padding-left: 1%;
+        }
+        @media (max-width: 1399px) {
+            font-size: 18px;
+            padding-left: 10px;
+
+            &.active, &.all-active {
+                padding: 20px 30px;
+            }
+        }
+        @media (max-width: 1269px) {
+            font-size: 16px;
+
+            span {
+                margin-left: 5px;
+            }
+        }
+        @media (max-width: 1199px) {
+            width: calc(20% - 10px);
+
+            span {
+                border-left-width: 7px;
+                border-top-width: 5px;
+                border-bottom-width: 5px;
+            }
+
+            &.active, &.all-active {
+                letter-spacing: 1px;
+            }
+
+            &.active {
+                width: calc(60% - 10px);
+            }
+        }
+        @media (max-width: 1199px) {
+            width: calc(25% - 10px);
+            padding: 15px 0 15px 10px;
+
+            &.active {
+                width: calc(50% - 10px);
+            }
+
+            &.active, &.all-active {
+                padding: 15px 20px;
+            }
+        }
+        @media (max-width: 1199px) {
+            width: calc(30% - 10px);
+
+            &.active {
+                width: calc(40% - 10px);
+            }
+        }
+        @media (max-width: 639px) {
+            width: calc(33.3% - 10px);
+            padding: 15px 0 15px 10px;
+            font-weight: 300;
+
+            &.active, &.all-active {
+                letter-spacing: 0;
+                padding: 15px 0 15px 10px;
+                font-weight: 300;
+            }
+
+            &.active {
+                width: calc(33.3% - 10px);
+                padding: 15px 0 15px 10px;
+                font-weight: 300;
+            }
+        }
+        @media (max-width: 559px) {
+            width: 100%;
+            margin: 5px 0 0 0;
+
+            &.active, &.all-active {
+                width: 100%;
+            }
+        }
+        @media (max-width: 400px) {
+            font-size: 14px;
+            padding: 12px;
+            letter-spacing: 1px;
+
+            &.active, &.all-active {
+                padding: 12px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

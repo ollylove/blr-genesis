@@ -1,0 +1,199 @@
+.news-btn {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 55px;
+    margin-top: 100px;
+
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:after {
+        top: 0;
+        z-index: 0;
+        background: transparentize($dark-blue, 0.1);
+    }
+
+    &:before {
+        top: 100%;
+        z-index: 1;
+        background: $light-blue;
+        transition: top 0.3s linear;
+    }
+
+    .left-arrow, .right-arrow, p {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    p {
+        margin: 0;
+
+        span {
+            display: block;
+            @include font-style('oswald', 32px, 700);
+            text-transform: uppercase;
+            line-height: 130%;
+
+            + span {
+                font-size: 44px;
+                transition: color 0.3s linear;
+            }
+        }
+    }
+
+    .left-arrow, .right-arrow {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        width: 85px;
+        height: 122px;
+        transition: all 0.3s linear;
+    }
+
+    .left-arrow {
+        background-image: url("img/left-blue-arrow.png");
+        margin-right: 58px;
+    }
+
+    .right-arrow {
+        background-image: url("img/right-blue-arrow.png");
+        margin-left: 83px;
+    }
+
+    &:hover {
+        &:before {
+            top: 0;
+        }
+
+        p span + span {
+            color: $white;
+        }
+
+        .left-arrow {
+            background-image: url("img/left-white-arrow.png");
+        }
+
+        .right-arrow {
+            background-image: url("img/right-white-arrow.png");
+        }
+    }
+
+    @media (max-width: 1399px) {
+        padding: 40px;
+
+        .left-arrow {
+            margin-right: 40px;
+            height: 80px;
+        }
+
+        .right-arrow {
+            margin-left: 40px;
+            height: 80px;
+        }
+
+        p {
+            span {
+                font-size: 30px;
+
+                + span {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1399px) {
+        padding: 40px 20px;
+
+        .left-arrow, .right-arrow {
+            width: 50px;
+        }
+
+        p span {
+            font-weight: 400;
+        }
+    }
+    @media (max-width: 991px) {
+        padding: 30px 20px;
+
+        .left-arrow {
+            margin-right: 20px;
+            height: 60px;
+        }
+
+        .right-arrow {
+            margin-left: 20px;
+            height: 60px;
+        }
+
+        p {
+            span {
+                font-size: 26px;
+
+                + span {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        padding: 20px;
+
+        .left-arrow {
+            margin-right: 20px;
+            height: 50px;
+            width: 32px;
+        }
+
+        .right-arrow {
+            margin-left: 20px;
+            height: 50px;
+            width: 32px;
+        }
+
+        p {
+            span {
+                font-size: 22px;
+
+                + span {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    @media (max-width: 599px) {
+        width: 100%;
+        margin-top: 50px;
+
+        + .news-btn {
+            margin-top: 0;
+        }
+    }
+    @media (max-width: 400px) {
+        .left-arrow {
+            margin-right: 15px;
+            height: 44px;
+        }
+
+        .right-arrow {
+            margin-left: 15px;
+            height: 44px;
+        }
+
+        p {
+            span {
+                font-size: 20px;
+
+                + span {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}

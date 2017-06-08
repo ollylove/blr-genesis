@@ -17,6 +17,7 @@
 
 @import "headers/header";
 @import "headers/header-homepage";
+@import "headers/header-news";
 
 // import elements and components
 
@@ -27,6 +28,9 @@
 @import "sections/homepage-introduction";
 @import "sections/homepage-boxes";
 @import "sections/homepage-stripe";
+@import "sections/news-filter";
+@import "sections/news-articles";
+@import "sections/news-navigation-btns";
 
 // import footer
 

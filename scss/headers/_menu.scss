@@ -59,6 +59,19 @@
                     color: $light-blue;
                 }
 
+                &.active {
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -16px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-top: 10px solid $white;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                    }
+                }
+
                 @media (max-width: 1599px) {
                     padding: 4px 30px;
                 }
