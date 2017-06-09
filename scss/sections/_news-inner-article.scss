@@ -2,7 +2,7 @@
     width: calc(84% - 30px);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     padding: 5% 8.3% 4% 8.3%;
-    margin: -288px auto 50px auto;
+    margin: -288px auto 80px auto;
 
     h3 {
         @include font-style('oswald', 49px, 400);
@@ -26,6 +26,48 @@
         }
     }
 
+    .left-arrow, .right-arrow {
+        position: absolute;
+        top: 70px;
+        width: 85px;
+        height: 136px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .left-arrow {
+        left: -120px;
+        background-image: url("img/left-blue-arrow.png");
+
+        &:hover {
+            background-image: url("img/left-white-arrow.png");
+        }
+    }
+
+    .right-arrow {
+        right: -120px;
+        background-image: url("img/right-blue-arrow.png");
+
+        &:hover {
+            background-image: url("img/right-white-arrow.png");
+        }
+    }
+
+    @media (max-width: 1399px) {
+        .left-arrow, .right-arrow {
+            width: 65px;
+        }
+
+        .left-arrow {
+            left: -85px;
+        }
+
+        .right-arrow {
+            right: -85px;
+        }
+    }
     @media (max-width: 1499px) {
         padding: 5% 5% 4% 5%;
 
@@ -47,7 +89,7 @@
         }
     }
     @media (max-width: 1199px) {
-        padding: 4% 4% 3% 4%;
+        padding: 4%;
         width: calc(100% - 40px);
         margin: -170px auto 50px auto;
 
@@ -66,9 +108,38 @@
                 border-left-width: 8px;
             }
         }
+
+        .left-arrow, .right-arrow {
+            width: 20px;
+            height: 35px;
+            top: auto;
+            bottom: 15px;
+            border-radius: 6px;
+
+            &:active {
+                background-color: $light-grey;
+            }
+        }
+
+        .left-arrow {
+            left: auto;
+            right: 65px;
+
+            &:hover {
+                background-image: url("img/left-blue-arrow.png");
+            }
+        }
+
+        .right-arrow {
+            right: 20px;
+
+            &:hover {
+                background-image: url("img/right-blue-arrow.png");
+            }
+        }
     }
     @media (max-width: 991px) {
-        padding: 30px 30px 10px 30px;
+        padding: 30px 30px 40px 30px;
 
         h3 {
             font-size: 30px;
@@ -92,8 +163,11 @@
             }
         }
     }
+    @media (max-width: 599px) {
+        margin-bottom: 30px;
+    }
     @media (max-width: 400px) {
-        padding: 20px 20px 5px 20px;
+        padding: 20px 20px 40px 20px;
 
         h3 {
             font-size: 22px;

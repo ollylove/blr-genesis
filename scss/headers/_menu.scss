@@ -73,14 +73,20 @@
                 }
 
                 @media (max-width: 1599px) {
-                    padding: 4px 30px;
+                    padding: 4px 29px;
                 }
                 @media (max-width: 1505px) {
-                    padding: 4px 25px;
+                    padding: 4px 24px;
                 }
                 @media (max-width: 1419px) {
                     padding: 10px 20px;
                     font-size: 12px;
+
+                    &.active {
+                        &:after {
+                            bottom: -10px;
+                        }
+                    }
                 }
                 @media (max-width: 1249px) {
                     padding: 10px 15px;
@@ -123,7 +129,7 @@
 
             li {
                 width: 100%;
-                background: transparentize($white, 0.1);
+                background: transparentize($white, 0.05);
                 opacity: 0;
                 transition: opacity 0.3s linear;
 
@@ -148,6 +154,14 @@
                     opacity: 0;
                     color: $dark-blue;
                     font-weight: 400;
+
+                    &.active {
+                        color: $light-blue;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
                 }
             }
 

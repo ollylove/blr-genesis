@@ -1,197 +1,239 @@
-.news-btn {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 80px 55px;
+.news-navigation-btns {
     margin-top: 100px;
+    display: table;
+    width: 100%;
 
-    &:before, &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
+    @media (max-width: 599px) {
+        margin-top: 50px;
+        display: block;
     }
 
-    &:after {
-        top: 0;
-        z-index: 0;
-        background: transparentize($dark-blue, 0.1);
-    }
-
-    &:before {
-        top: 100%;
-        z-index: 1;
-        background: $light-blue;
-        transition: top 0.3s linear;
-    }
-
-    .left-arrow, .right-arrow, p {
-        display: inline-block;
+    .news-btn {
+        display: table-cell;
         vertical-align: middle;
-    }
-
-    p {
-        margin: 0;
-
-        span {
-            display: block;
-            @include font-style('oswald', 32px, 700);
-            text-transform: uppercase;
-            line-height: 130%;
-
-            + span {
-                font-size: 44px;
-                transition: color 0.3s linear;
-            }
-        }
-    }
-
-    .left-arrow, .right-arrow {
         background-repeat: no-repeat;
         background-position: center;
-        background-size: auto 100%;
-        width: 85px;
-        height: 122px;
-        transition: all 0.3s linear;
-    }
+        background-size: cover;
+        padding: 80px 55px;
 
-    .left-arrow {
-        background-image: url("img/left-blue-arrow.png");
-        margin-right: 58px;
-    }
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
 
-    .right-arrow {
-        background-image: url("img/right-blue-arrow.png");
-        margin-left: 83px;
-    }
-
-    &:hover {
-        &:before {
+        &:after {
             top: 0;
+            z-index: 0;
+            background: transparentize($dark-blue, 0.1);
         }
 
-        p span + span {
-            color: $white;
+        &:before {
+            top: 100%;
+            z-index: 1;
+            background: $light-blue;
+            transition: top 0.3s linear;
         }
 
-        .left-arrow {
-            background-image: url("img/left-white-arrow.png");
-        }
-
-        .right-arrow {
-            background-image: url("img/right-white-arrow.png");
-        }
-    }
-
-    @media (max-width: 1399px) {
-        padding: 40px;
-
-        .left-arrow {
-            margin-right: 40px;
-            height: 80px;
-        }
-
-        .right-arrow {
-            margin-left: 40px;
-            height: 80px;
+        .left-arrow, .right-arrow, p {
+            display: inline-block;
+            vertical-align: middle;
         }
 
         p {
+            margin: 0;
+            max-width: 420px;
+
             span {
-                font-size: 30px;
+                display: block;
+                @include font-style('oswald', 32px, 700);
+                text-transform: uppercase;
+                line-height: 130%;
 
                 + span {
-                    font-size: 40px;
+                    font-size: 44px;
+                    transition: color 0.3s linear;
+
+                    + span {
+                        @include font-style('open sans', 22px, 300);
+                        text-transform: none;
+                        margin-left: auto;
+                        padding-top: 10px;
+                    }
                 }
             }
         }
-    }
-    @media (max-width: 1399px) {
-        padding: 40px 20px;
 
         .left-arrow, .right-arrow {
-            width: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 100%;
+            width: 85px;
+            height: 122px;
+            transition: all 0.3s linear;
         }
-
-        p span {
-            font-weight: 400;
-        }
-    }
-    @media (max-width: 991px) {
-        padding: 30px 20px;
 
         .left-arrow {
-            margin-right: 20px;
-            height: 60px;
+            background-image: url("img/left-blue-arrow.png");
+            margin-right: 58px;
         }
 
         .right-arrow {
-            margin-left: 20px;
-            height: 60px;
+            background-image: url("img/right-blue-arrow.png");
+            margin-left: 83px;
         }
 
-        p {
-            span {
-                font-size: 26px;
+        &:hover {
+            &:before {
+                top: 0;
+            }
+
+            p span + span {
+                color: $dark-blue;
 
                 + span {
-                    font-size: 34px;
+                    color: $white;
                 }
             }
-        }
-    }
-    @media (max-width: 767px) {
-        padding: 20px;
 
-        .left-arrow {
-            margin-right: 20px;
-            height: 50px;
-            width: 32px;
-        }
+            .left-arrow {
+                background-image: url("img/left-white-arrow.png");
+            }
 
-        .right-arrow {
-            margin-left: 20px;
-            height: 50px;
-            width: 32px;
+            .right-arrow {
+                background-image: url("img/right-white-arrow.png");
+            }
         }
 
-        p {
-            span {
-                font-size: 22px;
+        @media (max-width: 1499px) {
+            p {
+                max-width: 400px;
+            }
+        }
+        @media (max-width: 1399px) {
+            padding: 40px;
 
-                + span {
+            .left-arrow, .right-arrow {
+                width: 50px;
+            }
+
+            .left-arrow {
+                margin-right: 40px;
+                height: 80px;
+            }
+
+            .right-arrow {
+                margin-left: 40px;
+                height: 80px;
+            }
+
+            p {
+                max-width: 350px;
+
+                span {
                     font-size: 30px;
+                    font-weight: 400;
+
+                    + span {
+                        font-size: 40px;
+
+                        + span {
+                            font-size: 18px;
+                        }
+                    }
                 }
             }
         }
-    }
-    @media (max-width: 599px) {
-        width: 100%;
-        margin-top: 50px;
+        @media (max-width: 1199px) {
+            padding: 40px 20px;
 
-        + .news-btn {
-            margin-top: 0;
+            p {
+                span + span + span {
+                    font-size: 16px;
+                }
+            }
         }
-    }
-    @media (max-width: 400px) {
-        .left-arrow {
-            margin-right: 15px;
-            height: 44px;
+        @media (max-width: 991px) {
+            padding: 30px 20px;
+
+            .left-arrow {
+                margin-right: 20px;
+                height: 60px;
+            }
+
+            .right-arrow {
+                margin-left: 20px;
+                height: 60px;
+            }
+
+            p {
+                max-width: 70%;
+
+                span {
+                    font-size: 26px;
+
+                    + span {
+                        font-size: 34px;
+                    }
+                }
+            }
         }
+        @media (max-width: 767px) {
+            padding: 20px;
 
-        .right-arrow {
-            margin-left: 15px;
-            height: 44px;
+            .left-arrow {
+                margin-right: 20px;
+                height: 50px;
+                width: 32px;
+            }
+
+            .right-arrow {
+                margin-left: 20px;
+                height: 50px;
+                width: 32px;
+            }
+
+            p {
+                max-width: 80%;
+
+                span {
+                    font-size: 22px;
+
+                    + span {
+                        font-size: 30px;
+
+                        + span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
         }
+        @media (max-width: 669px) {
+            width: 100%;
+            display: block;
 
-        p {
-            span {
-                font-size: 20px;
+        }
+        @media (max-width: 400px) {
+            .left-arrow {
+                margin-right: 15px;
+                height: 44px;
+            }
 
-                + span {
-                    font-size: 28px;
+            .right-arrow {
+                margin-left: 15px;
+                height: 44px;
+            }
+
+            p {
+                span {
+                    font-size: 20px;
+
+                    + span {
+                        font-size: 28px;
+                    }
                 }
             }
         }
