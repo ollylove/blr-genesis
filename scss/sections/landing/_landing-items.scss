@@ -1,0 +1,192 @@
+.landing-items {
+    padding: 100px 20px 122px;
+    font-size: 0;
+
+    h4 {
+        @include font-style('oswald', 54px, 400);
+        margin: 0;
+    }
+
+    h6 {
+        @include font-style('open sans', 32px, 300);
+        margin: 0;
+    }
+
+    .landing-block {
+        display: inline-block;
+        vertical-align: top;
+        width: 28%;
+        padding: 50px 20px;
+        transition: all 0.3s linear;
+        opacity: 0.5;
+        transform: scale(0.75);
+        cursor: default;
+
+        img {
+            width: auto;
+            height: 290px;
+        }
+
+        h5 {
+            @include font-style('oswald', 50px, 400);
+            margin: 10px 0 30px 0;
+        }
+
+        p {
+            @include font-style('open sans', 21px, 300);
+            margin: 0 0 45px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            opacity: 0;
+        }
+
+        &:hover {
+            opacity: 1;
+            transform: scale(1);
+
+            .btn {
+                opacity: 1;
+            }
+        }
+    }
+    
+    @media (max-width: 1599px) {
+        .landing-block {
+            width: 33%;
+        }
+    }
+    @media (max-width: 1399px) {
+        padding: 80px 20px;
+
+        h4 {
+            font-size: 50px;
+        }
+
+        h6 {
+            font-size: 28px;
+            line-height: 150%;
+        }
+
+        .landing-block {
+            width: 33.33%;
+            transform: scale(0.9);
+
+            img {
+                width: auto;
+                height: auto;
+                max-height: 250px;
+                max-width: 100%;
+            }
+
+            h5 {
+                font-size: 44px;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+    @media (max-width: 1199px) {
+        padding: 50px 20px;
+
+        h4 {
+            font-size: 46px;
+        }
+
+        h6 {
+            font-size: 24px;
+        }
+
+        .landing-block {
+            padding: 20px 15px 0;
+            opacity: 1;
+            transform: scale(1);
+
+            img {
+                max-height: 200px;
+            }
+
+            h5 {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+
+            .btn {
+                opacity: 1;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        padding: 30px 20px;
+
+        h4 {
+            font-size: 40px;
+        }
+
+        h6 {
+            font-size: 20px;
+        }
+
+        .landing-block {
+            padding: 20px 5px 0;
+
+            img {
+                max-height: 170px;
+            }
+
+            h5 {
+                font-size: 34px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    @media (max-width: 879px) {
+        h4 {
+            font-size: 38px;
+        }
+
+        .landing-block {
+            width: 70%;
+            padding: 40px 0;
+        }
+    }
+    @media (max-width: 767px) {
+        h4 {
+            font-size: 34px;
+        }
+
+        h6 {
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
+        .landing-block {
+            width: 80%;
+
+            h5 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: 400px) {
+        .landing-block {
+            width: 100%;
+        }
+    }
+}

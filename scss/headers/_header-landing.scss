@@ -1,0 +1,126 @@
+.header-landing {
+    border-bottom: 100px solid $dark-blue;
+
+    h1 {
+        margin: 0;
+        padding-top: 115px;
+
+        span {
+            display: block;
+            text-transform: uppercase;
+            @include font-style('oswald', 207px, 700);
+            padding-right: 33%;
+            line-height: 100%;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+            + span {
+                transform: translateY(-25%);
+                padding-right: 2%;
+                letter-spacing: 5px; 
+            }
+        }
+    }
+
+    h2 {
+        @include font-style('oswald', 54px, 400);
+        margin: -25px 0 40px 0;
+    }
+
+    .btn {
+        margin-bottom: 94px;
+        display: inline-block;
+        font-size: 21px;
+
+        &:hover {
+            background: darken($light-blue, 5%);
+        }
+    }
+    
+    @media (max-width: 1399px) {
+        border-bottom-width: 80px;
+
+        h1 {
+            padding-top: 80px;
+
+            span {
+                font-size: 180px;
+
+                + span {
+                    letter-spacing: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 50px;
+            margin-top: -10px;
+        }
+    }
+    @media (max-width: 1199px) {
+        border-bottom-width: 50px;
+
+        h1 {
+            padding-top: 30px;
+
+            span {
+                font-size: 150px;
+            }
+        }
+
+        h2 {
+            font-size: 44px;
+        }
+
+        .btn {
+            margin-bottom: 60px;
+        }
+    }
+    @media (max-width: 991px) {
+        h1 {
+            padding-top: 0;
+
+            span {
+                font-size: 100px;
+                padding-right: 25%;
+
+                + span {
+                    transform: translateY(-30%);
+                }
+            }
+        }
+
+        h2 {
+            font-size: 38px;
+        }
+
+        .btn {
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 767px) {
+        border-bottom-width: 30px;
+
+        h1 {
+            span {
+                font-size: 80px;
+            }
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-top: 0;
+        }
+    }
+    @media (max-width: 599px) {
+        h1 span {
+            padding-right: 35%;
+        }
+    }
+    @media (max-width: 400px) {
+        .btn {
+            font-size: 16px;
+        }
+    }
+}

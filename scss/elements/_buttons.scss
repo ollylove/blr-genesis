@@ -30,6 +30,35 @@
         @include btn($white);
     }
 
+    &.light-blue-bg-btn, &.dark-blue-bg-btn {
+        border: none;
+        color: $white;
+        padding: 15px 80px;
+
+        @media (max-width: 1199px) {
+            padding: 15px 60px;
+        }
+        @media (max-width: 767px) {
+            padding: 12px 40px;
+        }
+    }
+
+    &.light-blue-bg-btn {
+        background: $light-blue;
+
+        &:hover {
+            background: darken($light-blue, 10%);
+        }
+    }
+
+    &.dark-blue-bg-btn {
+        background: $dark-blue;
+
+        &:hover {
+            background: lighten($dark-blue, 10%);
+        }
+    }
+
     &.white-hover-btn {
         &:hover {
             @include btn($white);
