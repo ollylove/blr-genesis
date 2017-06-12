@@ -1,5 +1,5 @@
 .landing-items {
-    padding: 100px 20px 122px;
+    padding: 100px 20px 116px;
     font-size: 0;
 
     h4 {
@@ -91,7 +91,7 @@
         }
     }
     @media (max-width: 1199px) {
-        padding: 50px 20px;
+        padding: 50px 20px 70px;
 
         h4 {
             font-size: 46px;
@@ -102,9 +102,10 @@
         }
 
         .landing-block {
-            padding: 20px 15px 0;
+            padding: 40px 15px 0;
             opacity: 1;
             transform: scale(1);
+            vertical-align: bottom;
 
             img {
                 max-height: 200px;
@@ -126,7 +127,7 @@
         }
     }
     @media (max-width: 991px) {
-        padding: 30px 20px;
+        padding: 30px 20px 50px;
 
         h4 {
             font-size: 40px;

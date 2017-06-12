@@ -1,0 +1,299 @@
+.landing-how-we-work {
+    padding: 86px 20px 220px 9%;
+    margin-bottom: 15px;
+
+    img {
+        position: absolute;
+        z-index: 0;
+
+        &.how-we-work-top {
+            top: 0;
+            right: 0;
+            max-width: 26%;
+        }
+
+        &.how-we-work-bottom {
+            bottom: 0;
+            left: 0;
+            max-width: 44%;
+        }
+    }
+
+    h2 {
+        @include font-style('oswald', 70px, 400);
+        line-height: 120%;
+        margin: 0;
+        text-transform: capitalize;
+    }
+
+    h3 {
+        @include font-style('open sans', 34px, 300);
+        line-height: 130%;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .how-we-work-block {
+        margin-top: 50px;
+
+        .how-we-work-number, .how-we-work-text {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .how-we-work-number {
+            @include font-style('oswald', 202px, 700);
+            color: $light-grey;
+            line-height: 100%;
+            padding-right: 37px;
+            text-align: right;
+        }
+
+        .how-we-work-text {
+            width: 40%;
+            @include font-style('open sans', 20px, 300);
+            margin: 0;
+            line-height: 158%;
+
+            > strong, > span {
+                display: block;
+            }
+
+            > strong {
+                @include font-style('oswald', 60px, 400);
+                line-height: 120%;
+            }
+
+            > span {
+                @include font-style('open sans', 27px, 300);
+                text-transform: uppercase;
+                line-height: 170%;
+            }
+        }
+
+        &.first {
+            .how-we-work-number {
+                letter-spacing: -10px;
+                padding-right: 12px;
+            }
+        }
+
+        &.second {
+            padding: 15px 0 45px;
+
+            .how-we-work-number {
+                margin-left: 18%;
+            }
+        }
+
+        &.third {
+            .how-we-work-number {
+                margin-left: 36%;
+            }
+        }
+    }
+
+    @media (max-width: 1499px) {
+        padding: 50px 20px 200px 6%;
+
+        img {
+            &.how-we-work-top {
+                max-width: 30%;
+            }
+        }
+
+        h2 {
+            font-size: 60px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        .how-we-work-block {
+            &.first, &.second, &.third {
+                margin: 40px 0 0 0;
+                padding: 0;
+            }
+
+            .how-we-work-text {
+                line-height: 140%;
+                font-size: 19px;
+
+                > strong {
+                    font-size: 50px;
+                }
+
+                > span {
+                    font-size: 24px;
+                    line-height: 200%;
+                }
+            }
+        }
+    }
+    @media (max-width: 1199px) {
+        padding: 20px 20px 100px;
+
+        img.how-we-work-bottom {
+            max-width: 40%;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-size: 26px;
+            line-height: 150%;
+        }
+
+        .how-we-work-block {
+            &.first, &.second, &.third {
+                .how-we-work-number {
+                    font-size: 170px;
+                    letter-spacing: 0;
+                    padding-right: 20px;
+                }
+            }
+
+            .how-we-work-text {
+                font-size: 18px;
+
+                > strong {
+                    font-size: 40px;
+                }
+
+                > span {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        margin-bottom: 0;
+
+        img {
+            opacity: 0.2;
+
+            &.how-we-work-top {
+                max-width: 45%;
+            }
+
+            &.how-we-work-bottom {
+                display: none;
+            }
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        .how-we-work-block {
+            &.first, &.second, &.third {
+                padding-left: 170px;
+
+                .how-we-work-number {
+                    position: absolute;
+                    left: 0;
+                    top: -12px;
+                    font-size: 140px;
+                    padding-right: 0;
+                    margin-left: 0;
+                }
+            }
+
+            .how-we-work-text {
+                width: 100%;
+
+                > strong {
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .how-we-work-block {
+            &.first, &.second, &.third {
+                padding-left: 160px;
+
+                .how-we-work-number {
+                    font-size: 130px;
+                    top: -10px;
+                }
+            }
+
+            .how-we-work-text {
+                font-size: 16px;
+
+                > strong {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+    @media (max-width: 599px) {
+        padding: 0 20px 70px;
+
+        img.how-we-work-top {
+            max-width: 55%;
+        }
+
+        h2 {
+            font-size: 38px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .how-we-work-block {
+            &.first, &.second, &.third {
+                padding-left: 0;
+
+                .how-we-work-number {
+                    font-size: 100px;
+                    top: -15px;
+                }
+            }
+
+            .how-we-work-text {
+                > strong, > span {
+                    padding-left: 125px;
+                }
+
+                > span {
+                    line-height: 270%;
+                }
+            }
+        }
+    }
+    @media (max-width: 499px) {
+        .how-we-work-block {
+            &.first, &.second, &.third {
+                .how-we-work-number {
+                    top: 0;
+                }
+            }
+
+            .how-we-work-text {
+                font-size: 14px;
+
+                > strong, > span {
+                    padding-left: 120px;
+                }
+
+                > span {
+                    font-size: 18px;
+                    line-height: 130%;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    width: 290px;
+                }
+            }
+        }
+    }
+}

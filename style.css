@@ -816,6 +816,27 @@ a, button {
     font-size: 21px; }
     .header-landing .btn:hover {
       background: #1a93c5; }
+  .header-landing.header-landing-cta h1, .header-landing.header-landing-cta h2 {
+    max-width: 73%;
+    margin: 0 auto;
+    text-align: left; }
+  @media (min-width: 1400px) {
+    .header-landing.header-landing-cta h1 {
+      padding-top: 188px; } }
+  .header-landing.header-landing-cta h1 span, .header-landing.header-landing-cta h1 span + span {
+    transform: none;
+    padding: 0;
+    letter-spacing: 0; }
+  .header-landing.header-landing-cta h1 span + span {
+    font-size: 126px; }
+  .header-landing.header-landing-cta h2 {
+    margin-bottom: 35px;
+    white-space: nowrap; }
+  @media (max-width: 1499px) {
+    .header-landing.header-landing-cta h1, .header-landing.header-landing-cta h2 {
+      max-width: none; }
+    .header-landing.header-landing-cta h1 span + span {
+      font-size: 120px; } }
   @media (max-width: 1399px) {
     .header-landing {
       border-bottom-width: 80px; }
@@ -828,7 +849,9 @@ a, button {
             padding-right: 0; }
       .header-landing h2 {
         font-size: 50px;
-        margin-top: -10px; } }
+        margin-top: -10px; }
+      .header-landing.header-landing-cta h1 span + span {
+        font-size: 100px; } }
   @media (max-width: 1199px) {
     .header-landing {
       border-bottom-width: 50px; }
@@ -839,7 +862,16 @@ a, button {
       .header-landing h2 {
         font-size: 44px; }
       .header-landing .btn {
-        margin-bottom: 60px; } }
+        margin-bottom: 60px; }
+      .header-landing.header-landing-cta h1 span + span {
+        font-size: 90px; } }
+  @media (max-width: 1059px) {
+    .header-landing.header-landing-cta h2 {
+      white-space: normal;
+      max-width: 670px;
+      margin-left: 0;
+      line-height: 120%;
+      padding: 15px 0; } }
   @media (max-width: 991px) {
     .header-landing h1 {
       padding-top: 0; }
@@ -852,7 +884,12 @@ a, button {
       font-size: 38px; }
     .header-landing .btn {
       margin-bottom: 40px;
-      font-size: 18px; } }
+      font-size: 18px; }
+    .header-landing.header-landing-cta h1 span + span {
+      font-size: 60px;
+      padding-top: 10px; }
+    .header-landing.header-landing-cta h2 {
+      max-width: 580px; } }
   @media (max-width: 767px) {
     .header-landing {
       border-bottom-width: 30px; }
@@ -860,13 +897,23 @@ a, button {
         font-size: 80px; }
       .header-landing h2 {
         font-size: 30px;
-        margin-top: 0; } }
+        margin-top: 0; }
+      .header-landing.header-landing-cta h1 span + span {
+        font-size: 50px; } }
   @media (max-width: 599px) {
     .header-landing h1 span {
-      padding-right: 35%; } }
+      padding-right: 35%; }
+    .header-landing.header-landing-cta h1 span {
+      font-size: 70px; }
+      .header-landing.header-landing-cta h1 span + span {
+        font-size: 44px; } }
   @media (max-width: 400px) {
     .header-landing .btn {
-      font-size: 16px; } }
+      font-size: 16px; }
+    .header-landing.header-landing-cta h1 span {
+      font-size: 57px; }
+      .header-landing.header-landing-cta h1 span + span {
+        font-size: 38px; } }
 
 .btn {
   border: 2px solid;
@@ -2154,7 +2201,7 @@ a, button {
         font-size: 22px; } }
 
 .landing-items {
-  padding: 100px 20px 122px;
+  padding: 100px 20px 116px;
   font-size: 0; }
   .landing-items h4 {
     font-family: "oswald";
@@ -2222,15 +2269,16 @@ a, button {
           font-size: 20px; } }
   @media (max-width: 1199px) {
     .landing-items {
-      padding: 50px 20px; }
+      padding: 50px 20px 70px; }
       .landing-items h4 {
         font-size: 46px; }
       .landing-items h6 {
         font-size: 24px; }
       .landing-items .landing-block {
-        padding: 20px 15px 0;
+        padding: 40px 15px 0;
         opacity: 1;
-        transform: scale(1); }
+        transform: scale(1);
+        vertical-align: bottom; }
         .landing-items .landing-block img {
           max-height: 200px; }
         .landing-items .landing-block h5 {
@@ -2243,7 +2291,7 @@ a, button {
           opacity: 1; } }
   @media (max-width: 991px) {
     .landing-items {
-      padding: 30px 20px; }
+      padding: 30px 20px 50px; }
       .landing-items h4 {
         font-size: 40px; }
       .landing-items h6 {
@@ -2277,6 +2325,534 @@ a, button {
   @media (max-width: 400px) {
     .landing-items .landing-block {
       width: 100%; } }
+
+.landing-testimonials {
+  margin-bottom: 86px; }
+  .landing-testimonials .banner {
+    padding: 60px 0;
+    font-size: 0;
+    white-space: nowrap; }
+    .landing-testimonials .banner img, .landing-testimonials .banner h5, .landing-testimonials .banner p, .landing-testimonials .banner .btn {
+      display: inline-block;
+      vertical-align: middle; }
+    .landing-testimonials .banner img {
+      margin-right: 41px;
+      margin-left: -30px; }
+    .landing-testimonials .banner h5 {
+      font-family: "oswald";
+      font-size: 96px;
+      font-weight: 400;
+      line-height: 100%;
+      margin: 0 55px 0 0;
+      text-transform: uppercase; }
+    .landing-testimonials .banner p {
+      font-family: "open sans";
+      font-size: 27px;
+      font-weight: 300;
+      margin: 0 82px 0 0;
+      line-height: 120%; }
+    .landing-testimonials .banner .btn {
+      margin: 14px 0 0 0; }
+      @media (min-width: 1655px) {
+        .landing-testimonials .banner .btn {
+          font-size: 22px; } }
+  .landing-testimonials .testimonials-box {
+    background: linear-gradient(#fff, #eee);
+    width: calc(50% - 3px);
+    padding: 160px 180px 130px; }
+    .landing-testimonials .testimonials-box p {
+      font-family: "open sans";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 135%;
+      margin: 0 0 15px 0; }
+      .landing-testimonials .testimonials-box p i {
+        font-weight: 300;
+        font-size: 21px; }
+    .landing-testimonials .testimonials-box.testimonials-cta {
+      background-position: left center;
+      background-color: #eee;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      width: 100%;
+      padding: 13% 15% 13% 55%; }
+  @media (max-width: 1654px) {
+    .landing-testimonials .banner .btn {
+      padding-left: 50px;
+      padding-right: 50px; } }
+  @media (max-width: 1565px) {
+    .landing-testimonials .banner img {
+      margin-right: 30px; }
+    .landing-testimonials .banner h5, .landing-testimonials .banner p {
+      margin-right: 40px; } }
+  @media (max-width: 1499px) {
+    .landing-testimonials .banner img, .landing-testimonials .banner h5, .landing-testimonials .banner p {
+      margin-right: 20px; }
+    .landing-testimonials .banner img {
+      height: 80px; }
+    .landing-testimonials .banner h5 {
+      font-size: 88px; }
+    .landing-testimonials .banner p {
+      font-size: 24px; }
+    .landing-testimonials .testimonials-box {
+      padding: 100px; }
+      .landing-testimonials .testimonials-box p {
+        font-size: 20px; }
+        .landing-testimonials .testimonials-box p i {
+          font-size: 18px; }
+      .landing-testimonials .testimonials-box.testimonials-cta {
+        padding: 10% 10% 10% 50%; } }
+  @media (max-width: 1349px) {
+    .landing-testimonials .banner {
+      padding: 40px 0; }
+      .landing-testimonials .banner img {
+        height: 70px; }
+      .landing-testimonials .banner h5 {
+        font-size: 78px; }
+      .landing-testimonials .banner p {
+        font-size: 22px; }
+      .landing-testimonials .banner .btn {
+        margin: 0; }
+    .landing-testimonials .testimonials-box {
+      padding: 80px 60px 65px; } }
+  @media (max-width: 1239px) {
+    .landing-testimonials .banner img {
+      height: 60px; }
+    .landing-testimonials .banner h5 {
+      font-size: 76px; }
+    .landing-testimonials .banner .btn {
+      padding-left: 42px;
+      padding-right: 42px; } }
+  @media (max-width: 1199px) {
+    .landing-testimonials {
+      margin-bottom: 50px; }
+      .landing-testimonials .banner {
+        padding: 30px 0; }
+        .landing-testimonials .banner img {
+          height: 50px;
+          margin-left: -20px; }
+        .landing-testimonials .banner h5 {
+          font-size: 68px; }
+        .landing-testimonials .banner p {
+          font-size: 20px; }
+      .landing-testimonials .testimonials-box {
+        padding: 50px 40px 35px; }
+        .landing-testimonials .testimonials-box p {
+          font-size: 18px; }
+          .landing-testimonials .testimonials-box p i {
+            font-size: 16px; } }
+  @media (max-width: 1069px) {
+    .landing-testimonials .banner h5 {
+      font-size: 60px;
+      letter-spacing: -1px; }
+    .landing-testimonials .banner p {
+      font-size: 19px; } }
+  @media (max-width: 991px) {
+    .landing-testimonials .banner {
+      padding: 30px 10%;
+      text-align: center;
+      white-space: normal; }
+      .landing-testimonials .banner img {
+        margin-left: 0; }
+      .landing-testimonials .banner h5 {
+        letter-spacing: 0;
+        margin-right: 0;
+        font-size: 67px; }
+      .landing-testimonials .banner p, .landing-testimonials .banner .btn {
+        margin-top: 30px; }
+    .landing-testimonials .testimonials-box {
+      padding: 30px 30px 15px; }
+      .landing-testimonials .testimonials-box p {
+        font-size: 16px; }
+        .landing-testimonials .testimonials-box p i {
+          font-size: 14px; } }
+  @media (max-width: 767px) {
+    .landing-testimonials .banner h5 {
+      font-size: 58px;
+      padding: 10px 0; }
+    .landing-testimonials .testimonials-box {
+      width: 100%; }
+      .landing-testimonials .testimonials-box.testimonials-cta {
+        padding-left: 40%; } }
+  @media (max-width: 609px) {
+    .landing-testimonials .banner img {
+      margin-top: 0; }
+    .landing-testimonials .banner h5 {
+      padding: 20px 0 0 0; }
+    .landing-testimonials .banner p, .landing-testimonials .banner .btn {
+      margin-top: 20px; }
+    .landing-testimonials .testimonials-box.testimonials-cta {
+      padding: 50px 30px 35px; }
+      .landing-testimonials .testimonials-box.testimonials-cta:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background: #eee;
+        opacity: 0.8; } }
+  @media (max-width: 499px) {
+    .landing-testimonials .banner {
+      padding: 30px 0; }
+      .landing-testimonials .banner h5, .landing-testimonials .banner p {
+        display: block; }
+      .landing-testimonials .banner h5 {
+        font-size: 50px; } }
+  @media (max-width: 400px) {
+    .landing-testimonials .banner h5 {
+      font-size: 44px; }
+    .landing-testimonials .testimonials-box.testimonials-cta {
+      padding-left: 20px;
+      padding-right: 20px; } }
+
+.landing-how-we-work {
+  padding: 86px 20px 220px 9%;
+  margin-bottom: 15px; }
+  .landing-how-we-work img {
+    position: absolute;
+    z-index: 0; }
+    .landing-how-we-work img.how-we-work-top {
+      top: 0;
+      right: 0;
+      max-width: 26%; }
+    .landing-how-we-work img.how-we-work-bottom {
+      bottom: 0;
+      left: 0;
+      max-width: 44%; }
+  .landing-how-we-work h2 {
+    font-family: "oswald";
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+    text-transform: capitalize; }
+  .landing-how-we-work h3 {
+    font-family: "open sans";
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 130%;
+    margin: 0;
+    text-transform: uppercase; }
+  .landing-how-we-work .how-we-work-block {
+    margin-top: 50px; }
+    .landing-how-we-work .how-we-work-block .how-we-work-number, .landing-how-we-work .how-we-work-block .how-we-work-text {
+      display: inline-block;
+      vertical-align: top; }
+    .landing-how-we-work .how-we-work-block .how-we-work-number {
+      font-family: "oswald";
+      font-size: 202px;
+      font-weight: 700;
+      color: #eee;
+      line-height: 100%;
+      padding-right: 37px;
+      text-align: right; }
+    .landing-how-we-work .how-we-work-block .how-we-work-text {
+      width: 40%;
+      font-family: "open sans";
+      font-size: 20px;
+      font-weight: 300;
+      margin: 0;
+      line-height: 158%; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text > strong, .landing-how-we-work .how-we-work-block .how-we-work-text > span {
+        display: block; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text > strong {
+        font-family: "oswald";
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 120%; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text > span {
+        font-family: "open sans";
+        font-size: 27px;
+        font-weight: 300;
+        text-transform: uppercase;
+        line-height: 170%; }
+    .landing-how-we-work .how-we-work-block.first .how-we-work-number {
+      letter-spacing: -10px;
+      padding-right: 12px; }
+    .landing-how-we-work .how-we-work-block.second {
+      padding: 15px 0 45px; }
+      .landing-how-we-work .how-we-work-block.second .how-we-work-number {
+        margin-left: 18%; }
+    .landing-how-we-work .how-we-work-block.third .how-we-work-number {
+      margin-left: 36%; }
+  @media (max-width: 1499px) {
+    .landing-how-we-work {
+      padding: 50px 20px 200px 6%; }
+      .landing-how-we-work img.how-we-work-top {
+        max-width: 30%; }
+      .landing-how-we-work h2 {
+        font-size: 60px; }
+      .landing-how-we-work h3 {
+        font-size: 30px; }
+      .landing-how-we-work .how-we-work-block.first, .landing-how-we-work .how-we-work-block.second, .landing-how-we-work .how-we-work-block.third {
+        margin: 40px 0 0 0;
+        padding: 0; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text {
+        line-height: 140%;
+        font-size: 19px; }
+        .landing-how-we-work .how-we-work-block .how-we-work-text > strong {
+          font-size: 50px; }
+        .landing-how-we-work .how-we-work-block .how-we-work-text > span {
+          font-size: 24px;
+          line-height: 200%; } }
+  @media (max-width: 1199px) {
+    .landing-how-we-work {
+      padding: 20px 20px 100px; }
+      .landing-how-we-work img.how-we-work-bottom {
+        max-width: 40%; }
+      .landing-how-we-work h2 {
+        font-size: 50px; }
+      .landing-how-we-work h3 {
+        font-size: 26px;
+        line-height: 150%; }
+      .landing-how-we-work .how-we-work-block.first .how-we-work-number, .landing-how-we-work .how-we-work-block.second .how-we-work-number, .landing-how-we-work .how-we-work-block.third .how-we-work-number {
+        font-size: 170px;
+        letter-spacing: 0;
+        padding-right: 20px; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text {
+        font-size: 18px; }
+        .landing-how-we-work .how-we-work-block .how-we-work-text > strong {
+          font-size: 40px; }
+        .landing-how-we-work .how-we-work-block .how-we-work-text > span {
+          font-size: 20px; } }
+  @media (max-width: 991px) {
+    .landing-how-we-work {
+      margin-bottom: 0; }
+      .landing-how-we-work img {
+        opacity: 0.2; }
+        .landing-how-we-work img.how-we-work-top {
+          max-width: 45%; }
+        .landing-how-we-work img.how-we-work-bottom {
+          display: none; }
+      .landing-how-we-work h2 {
+        font-size: 40px; }
+      .landing-how-we-work h3 {
+        font-size: 22px; }
+      .landing-how-we-work .how-we-work-block.first, .landing-how-we-work .how-we-work-block.second, .landing-how-we-work .how-we-work-block.third {
+        padding-left: 170px; }
+        .landing-how-we-work .how-we-work-block.first .how-we-work-number, .landing-how-we-work .how-we-work-block.second .how-we-work-number, .landing-how-we-work .how-we-work-block.third .how-we-work-number {
+          position: absolute;
+          left: 0;
+          top: -12px;
+          font-size: 140px;
+          padding-right: 0;
+          margin-left: 0; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text {
+        width: 100%; }
+        .landing-how-we-work .how-we-work-block .how-we-work-text > strong {
+          font-size: 38px; } }
+  @media (max-width: 767px) {
+    .landing-how-we-work .how-we-work-block.first, .landing-how-we-work .how-we-work-block.second, .landing-how-we-work .how-we-work-block.third {
+      padding-left: 160px; }
+      .landing-how-we-work .how-we-work-block.first .how-we-work-number, .landing-how-we-work .how-we-work-block.second .how-we-work-number, .landing-how-we-work .how-we-work-block.third .how-we-work-number {
+        font-size: 130px;
+        top: -10px; }
+    .landing-how-we-work .how-we-work-block .how-we-work-text {
+      font-size: 16px; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text > strong {
+        font-size: 36px; } }
+  @media (max-width: 599px) {
+    .landing-how-we-work {
+      padding: 0 20px 70px; }
+      .landing-how-we-work img.how-we-work-top {
+        max-width: 55%; }
+      .landing-how-we-work h2 {
+        font-size: 38px; }
+      .landing-how-we-work h3 {
+        font-size: 20px; }
+      .landing-how-we-work .how-we-work-block.first, .landing-how-we-work .how-we-work-block.second, .landing-how-we-work .how-we-work-block.third {
+        padding-left: 0; }
+        .landing-how-we-work .how-we-work-block.first .how-we-work-number, .landing-how-we-work .how-we-work-block.second .how-we-work-number, .landing-how-we-work .how-we-work-block.third .how-we-work-number {
+          font-size: 100px;
+          top: -15px; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text > strong, .landing-how-we-work .how-we-work-block .how-we-work-text > span {
+        padding-left: 125px; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text > span {
+        line-height: 270%; } }
+  @media (max-width: 499px) {
+    .landing-how-we-work .how-we-work-block.first .how-we-work-number, .landing-how-we-work .how-we-work-block.second .how-we-work-number, .landing-how-we-work .how-we-work-block.third .how-we-work-number {
+      top: 0; }
+    .landing-how-we-work .how-we-work-block .how-we-work-text {
+      font-size: 14px; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text > strong, .landing-how-we-work .how-we-work-block .how-we-work-text > span {
+        padding-left: 120px; }
+      .landing-how-we-work .how-we-work-block .how-we-work-text > span {
+        font-size: 18px;
+        line-height: 130%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 290px; } }
+
+.landing-bottom-stripe {
+  white-space: nowrap;
+  font-size: 0;
+  padding: 0 20px; }
+  .landing-bottom-stripe > div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    white-space: normal; }
+    .landing-bottom-stripe > div img {
+      display: block; }
+  .landing-bottom-stripe h5 {
+    font-family: "oswald";
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 27px 0 0 0; }
+  .landing-bottom-stripe h6 {
+    font-family: "open sans";
+    font-size: 34px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 152%;
+    margin: 0; }
+  .landing-bottom-stripe p {
+    font-family: "open sans";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+    margin: 0;
+    width: 40vw; }
+  .landing-bottom-stripe .landing-bottom-phone {
+    margin: -60px -20px 0 -20px; }
+    .landing-bottom-stripe .landing-bottom-phone img {
+      max-width: 380px; }
+  .landing-bottom-stripe .landing-bottom-btns {
+    vertical-align: bottom; }
+    .landing-bottom-stripe .landing-bottom-btns img {
+      margin: 0 37px 30px 0;
+      width: 170px; }
+  @media (max-width: 1559px) {
+    .landing-bottom-stripe h5 {
+      font-size: 64px; }
+    .landing-bottom-stripe h6 {
+      font-size: 30px;
+      line-height: 170%; }
+    .landing-bottom-stripe .landing-bottom-phone {
+      margin-left: -60px; } }
+  @media (max-width: 1469px) {
+    .landing-bottom-stripe h5 {
+      font-size: 60px;
+      line-height: 150%; }
+    .landing-bottom-stripe h6 {
+      font-size: 27px; }
+    .landing-bottom-stripe p {
+      font-size: 19px;
+      width: 45vw; }
+    .landing-bottom-stripe .landing-bottom-phone {
+      margin-right: -30px;
+      margin-left: -65px; } }
+  @media (max-width: 1399px) {
+    .landing-bottom-stripe h5 {
+      margin-top: 20px;
+      font-size: 50px;
+      line-height: 150%; }
+    .landing-bottom-stripe h6 {
+      font-size: 23px;
+      line-height: 140%;
+      padding-top: 5px; }
+    .landing-bottom-stripe p {
+      font-size: 18px;
+      padding-top: 10px; }
+    .landing-bottom-stripe .landing-bottom-phone {
+      margin-right: -30px;
+      margin-left: -65px; }
+      .landing-bottom-stripe .landing-bottom-phone img {
+        max-width: 350px; }
+    .landing-bottom-stripe .landing-bottom-btns img {
+      margin: 0 0 20px 0;
+      width: 150px; } }
+  @media (max-width: 1199px) {
+    .landing-bottom-stripe > div {
+      vertical-align: bottom; }
+    .landing-bottom-stripe h5 {
+      font-size: 40px; }
+    .landing-bottom-stripe h6 {
+      font-size: 19px; }
+    .landing-bottom-stripe p {
+      font-size: 17px;
+      width: 40vw;
+      padding-bottom: 20px; }
+    .landing-bottom-stripe .landing-bottom-phone {
+      margin-right: -30px;
+      margin-left: -40px; }
+      .landing-bottom-stripe .landing-bottom-phone img {
+        max-width: 300px; }
+    .landing-bottom-stripe .landing-bottom-btns img {
+      margin: 0 0 10px 0;
+      width: 145px; } }
+  @media (max-width: 1029px) {
+    .landing-bottom-stripe .landing-bottom-phone img {
+      max-width: 275px; } }
+  @media (max-width: 991px) {
+    .landing-bottom-stripe {
+      text-align: left; }
+      .landing-bottom-stripe .landing-bottom-phone {
+        display: none; }
+      .landing-bottom-stripe .landing-bottom-btns img {
+        display: inline-block;
+        margin: 0 0 15px 10px; } }
+  @media (max-width: 959px) {
+    .landing-bottom-stripe .landing-bottom-btns img {
+      display: block; } }
+  @media (max-width: 802px) {
+    .landing-bottom-stripe {
+      padding: 0; }
+      .landing-bottom-stripe > div {
+        padding: 0 10px 0 20px;
+        width: calc(100% - 170px); }
+      .landing-bottom-stripe h5 {
+        font-size: 37px;
+        line-height: 120%; }
+      .landing-bottom-stripe h6 {
+        font-size: 18px;
+        padding-top: 15px; }
+      .landing-bottom-stripe p {
+        width: 100%;
+        font-size: 16px; }
+      .landing-bottom-stripe .landing-bottom-btns {
+        width: auto;
+        padding: 0; }
+        .landing-bottom-stripe .landing-bottom-btns img {
+          margin-left: 0; } }
+  @media (max-width: 767px) {
+    .landing-bottom-stripe h5 {
+      font-size: 36px; }
+    .landing-bottom-stripe h6 {
+      font-size: 17px; }
+    .landing-bottom-stripe p {
+      width: 100%;
+      font-size: 15px; }
+    .landing-bottom-stripe .landing-bottom-btns img {
+      width: 134px; } }
+  @media (max-width: 599px) {
+    .landing-bottom-stripe {
+      white-space: normal; }
+      .landing-bottom-stripe > div {
+        width: 100%;
+        padding-right: 20px; }
+      .landing-bottom-stripe .landing-bottom-btns {
+        padding: 0 0 10px 20px; }
+        .landing-bottom-stripe .landing-bottom-btns img {
+          display: inline-block;
+          margin: 0 10px 0 0; } }
+  @media (max-width: 400px) {
+    .landing-bottom-stripe h5 {
+      font-size: 34px; }
+    .landing-bottom-stripe h6 {
+      font-size: 16px; }
+    .landing-bottom-stripe p {
+      font-size: 14px; }
+    .landing-bottom-stripe .landing-bottom-btns {
+      text-align: center; }
+      .landing-bottom-stripe .landing-bottom-btns img {
+        margin-right: 5px; } }
+  @media (max-width: 330px) {
+    .landing-bottom-stripe h5 {
+      font-size: 33px; } }
 
 .footer {
   background: #000;

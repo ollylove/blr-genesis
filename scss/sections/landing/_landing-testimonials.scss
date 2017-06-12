@@ -1,0 +1,307 @@
+.landing-testimonials {
+    margin-bottom: 86px;
+
+    .banner {
+        padding: 60px 0;
+        font-size: 0;
+        white-space: nowrap;
+
+        img, h5, p, .btn {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        img {
+            margin-right: 41px;
+            margin-left: -30px;
+        }
+
+        h5 {
+            @include font-style('oswald', 96px, 400);
+            line-height: 100%;
+            margin: 0 55px 0 0;
+            text-transform: uppercase;
+        }
+
+        p {
+            @include font-style('open sans', 27px, 300);
+            margin: 0 82px 0 0;
+            line-height: 120%;
+        }
+
+        .btn {
+            margin: 14px 0 0 0;
+            @media (min-width: 1655px) {
+                font-size: 22px;
+            }
+        }
+    }
+
+    .testimonials-box {
+        background: linear-gradient($white, $light-grey);
+        width: calc(50% - 3px);
+        padding: 160px 180px 130px;
+
+        p {
+            @include font-style('open sans', 24px, 700);
+            line-height: 135%;
+            margin: 0 0 15px 0;
+
+            i {
+                font-weight: 300;
+                font-size: 21px;
+            }
+        }
+
+        &.testimonials-cta {
+            background-position: left center;
+            background-color: $light-grey;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            width: 100%;
+            padding: 13% 15% 13% 55%;
+        }
+    }
+
+    @media (max-width: 1654px) {
+        .banner {
+            .btn {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+    @media (max-width: 1565px) {
+        .banner {
+            img {
+                margin-right: 30px;
+            }
+
+            h5, p {
+                margin-right: 40px;
+            }
+        }
+    }
+    @media (max-width: 1499px) {
+        .banner {
+            img, h5, p {
+                margin-right: 20px;
+            }
+
+            img {
+                height: 80px;
+            }
+
+            h5 {
+                font-size: 88px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+        }
+
+        .testimonials-box {
+            padding: 100px;
+
+            p {
+                font-size: 20px;
+
+                i {
+                    font-size: 18px;
+                }
+            }
+
+            &.testimonials-cta {
+                padding: 10% 10% 10% 50%;
+            }
+        }
+    }
+    @media (max-width: 1349px) {
+        .banner {
+            padding: 40px 0;
+
+            img {
+                height: 70px;
+            }
+
+            h5 {
+                font-size: 78px;
+            }
+
+            p {
+                font-size: 22px;
+            }
+
+            .btn {
+                margin: 0;
+            }
+        }
+
+        .testimonials-box {
+            padding: 80px 60px 65px;
+        }
+    }
+    @media (max-width: 1239px) {
+        .banner {
+            img {
+                height: 60px;
+            }
+
+            h5 {
+                font-size: 76px;
+            }
+
+            .btn {
+                padding-left: 42px;
+                padding-right: 42px;
+            }
+        }
+    }
+    @media (max-width: 1199px) {
+        margin-bottom: 50px;
+
+        .banner {
+            padding: 30px 0;
+
+            img {
+                height: 50px;
+                margin-left: -20px;
+            }
+
+            h5 {
+                font-size: 68px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .testimonials-box {
+            padding: 50px 40px 35px;
+
+            p {
+                font-size: 18px;
+
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1069px) {
+        .banner {
+            h5 {
+                font-size: 60px;
+                letter-spacing: -1px;
+            }
+
+            p {
+                font-size: 19px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .banner {
+            padding: 30px 10%;
+            text-align: center;
+            white-space: normal;
+
+            img {
+                margin-left: 0;
+            }
+
+            h5 {
+                letter-spacing: 0;
+                margin-right: 0;
+                font-size: 67px;
+            }
+
+            p, .btn {
+                margin-top: 30px;
+            }
+        }
+
+        .testimonials-box {
+            padding: 30px 30px 15px;
+
+            p {
+                font-size: 16px;
+
+                i {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .banner h5 {
+            font-size: 58px;
+            padding: 10px 0;
+        }
+
+        .testimonials-box {
+            width: 100%;
+
+            &.testimonials-cta {
+                padding-left: 40%;
+            }
+        }
+    }
+    @media (max-width: 609px) {
+        .banner {
+            img {
+                margin-top: 0;
+            }
+
+            h5 {
+                padding: 20px 0 0 0;
+            }
+
+            p, .btn {
+                margin-top: 20px;
+            }
+        }
+
+        .testimonials-box.testimonials-cta {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 0;
+                background: $light-grey;
+                opacity: 0.8;
+            }
+
+            padding: 50px 30px 35px;
+        }
+    }
+    @media (max-width: 499px) {
+        .banner {
+            padding: 30px 0;
+
+            h5, p {
+                display: block;
+            }
+
+            h5 {
+                font-size: 50px;
+            }
+        }
+    }
+    @media (max-width: 400px) {
+        .banner h5 {
+            font-size: 44px;
+        }
+
+        .testimonials-box.testimonials-cta {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
