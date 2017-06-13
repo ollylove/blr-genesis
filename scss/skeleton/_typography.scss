@@ -26,6 +26,12 @@ a, button {
     color: $dark-blue;
 }
 
+.dark-blue-hover-font-color {
+    &:hover {
+        color: $dark-blue;
+    }
+}
+
 .white-font-color {
     color: $white;
 }
@@ -36,6 +42,12 @@ a, button {
 
 .dark-blue-bg {
     background-color: $dark-blue;
+}
+
+.darker-light-blue-bg-hover {
+    &:hover {
+        background-color: darken($light-blue, 10%);
+    }
 }
 
 .white-bg {
@@ -53,3 +65,4 @@ a, button {
 .align-center {
     text-align: center;
 }
+

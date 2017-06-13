@@ -46,19 +46,18 @@
             span {
                 border-left-color: $white;
             }
-        }
-
-        &.all-active {
-            width: calc(33.3% - 10px);
 
             &:hover {
                 background: darken($light-blue, 10%);
             }
         }
 
+        &.all-active {
+            width: calc(33.3% - 10px);
+        }
+
         &.active {
             width: calc(72% - 10px);
-            cursor: text;
 
             span {
                 transform: rotate(90deg);
@@ -100,7 +99,7 @@
                 width: calc(60% - 10px);
             }
         }
-        @media (max-width: 1199px) {
+        @media (max-width: 991px) {
             width: calc(25% - 10px);
             padding: 15px 0 15px 10px;
 
@@ -112,7 +111,7 @@
                 padding: 15px 20px;
             }
         }
-        @media (max-width: 1199px) {
+        @media (max-width: 767px) {
             width: calc(30% - 10px);
 
             &.active {
@@ -156,3 +155,4 @@
         }
     }
 }
+

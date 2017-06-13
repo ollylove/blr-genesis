@@ -51,6 +51,9 @@
         }
     }
 
+    @media (min-width: 1900px) {
+        text-align: center;
+    }
     @media (max-width: 1559px) {
         h5 {
             font-size: 64px;
@@ -272,9 +275,3 @@
         }
     }
 }
-
-
-
-
-
-

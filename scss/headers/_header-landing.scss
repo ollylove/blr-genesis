@@ -37,10 +37,16 @@
     }
 
     &.header-landing-cta {
+        text-align: center;
+
         h1, h2 {
-            max-width: 73%;
+            display: inline-block;
             margin: 0 auto;
             text-align: left;
+
+            @media (min-width: 1400px) {
+                min-width: 1345px;
+            }
         }
 
         h1 {
@@ -62,6 +68,13 @@
         h2 {
             margin-bottom: 35px;
             white-space: nowrap;
+        }
+
+        .btn {
+            display: block;
+            max-width: 355px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -97,8 +110,12 @@
             margin-top: -10px;
         }
 
-        &.header-landing-cta h1 span + span {
-            font-size: 100px;
+        &.header-landing-cta {
+            text-align: left;
+
+            h1 span + span {
+                font-size: 100px;
+            }
         }
     }
     @media (max-width: 1199px) {

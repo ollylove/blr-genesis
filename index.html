@@ -16,14 +16,27 @@
 
         <!-- menu -->
         <ul class="pull-right">
-            <li><a href="landing-earth-movers.html">Equipment</a></li>
+            <li>
+                <a href="landing-earth-movers.html">Equipment</a>
+                <ul>
+                    <li><a href="">Eqipment Dropdown1</a></li>
+                    <li><a href="" class="active">Dropdown2</a></li>
+                </ul>
+            </li>
             <li><a href="">Resources</a></li>
             <li><a href="">About</a></li>
             <li><a href="news.html">News & events</a></li>
             <li><a href="">Careers</a></li>
             <li><a href="">Locations</a></li>
             <li><a href="">Contact</a></li>
-            <li class="search"><a href=""><img src="img/search.png" style="height: 30px;"></a></li>
+            <li class="search">
+                <a href="#"><img src="img/search.png" style="height: 30px;"></a>
+                <form class="search-form">
+                    <span class="close light-blue-font-color dark-blue-hover-font-color">&times;</span>
+                    <input type="text" placeholder="Search in the website...">
+                    <input type="submit">
+                </form>
+            </li>
             <li class="login"><a href="">Login</a></li>
         </ul>
         <div class="clear"></div> <!-- please keep all .clear, they're very important! -->
@@ -57,28 +70,30 @@
     </div>
 
     <!-- link boxes -->
-    <div class="homepage-boxes pull-left" style="background-image: url('img/homepage-box1.png')">
-        <h6 class="white-font-color">Learn more</h6>
-        <p class="light-blue-font-color">The BlueLine difference</p>
-        <a href="" class="btn white-btn light-blue-hover-btn">Learn more</a>
+    <div class="max-container">
+        <a href="" class="homepage-boxes pull-left" style="background-image: url('img/homepage-box1.png')">
+            <h6 class="white-font-color">Learn more</h6>
+            <p class="light-blue-font-color">The BlueLine difference</p>
+            <span class="btn white-btn light-blue-hover-btn">Learn more</span>
+        </a>
+        <a href="" class="homepage-boxes pull-left" style="background-image: url('img/homepage-box2.jpg')">
+            <h6 class="white-font-color">Rent equipment</h6>
+            <p class="light-blue-font-color">Search our catalogue</p>
+            <span class="btn white-btn light-blue-hover-btn">Rent equipment</span>
+        </a>
+        <a href="" class="homepage-boxes pull-left" style="background-image: url('img/homepage-box3.jpg')">
+            <h6 class="white-font-color">Buy used equipment</h6>
+            <p class="light-blue-font-color">Quality for less</p>
+            <span class="btn white-btn light-blue-hover-btn">Buy equipment</span>
+        </a>
+        <div class="clear"></div>
     </div>
-    <div class="homepage-boxes pull-left" style="background-image: url('img/homepage-box2.jpg')">
-        <h6 class="white-font-color">Rent equipment</h6>
-        <p class="light-blue-font-color">Search our catalogue</p>
-        <a href="" class="btn white-btn light-blue-hover-btn">Rent equipment</a>
-    </div>
-    <div class="homepage-boxes pull-left" style="background-image: url('img/homepage-box3.jpg')">
-        <h6 class="white-font-color">Buy used equipment</h6>
-        <p class="light-blue-font-color">Quality for less</p>
-        <a href="" class="btn white-btn light-blue-hover-btn">Buy equipment</a>
-    </div>
-    <div class="clear"></div>
 
     <!-- bottom link stripe with images -->
-    <div class="homepage-stripe">
+    <div class="homepage-stripe max-container">
 
         <!-- link to career page -->
-        <div class="stripe-btn light-blue-bg pull-left">
+        <div class="stripe-btn light-blue-bg darker-light-blue-bg-hover pull-left">
             <a href="">
 
                 <!-- man image -->

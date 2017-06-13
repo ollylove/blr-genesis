@@ -1,4 +1,5 @@
 .homepage-boxes {
+    display: block;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -35,6 +36,7 @@
         visibility: hidden;
         display: inline-block;
         margin-left: 10px;
+        transition: all 0.3s linear;
     }
 
     &:hover {

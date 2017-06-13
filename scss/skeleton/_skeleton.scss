@@ -34,6 +34,15 @@ body, html {
     margin-right: auto;
 }
 
+.max-container {
+    @media (min-width: 2100px) {
+        width: calc(84% - 30px);
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .col-2 {
     width: 50%;
 }

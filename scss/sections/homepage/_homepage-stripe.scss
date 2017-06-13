@@ -7,6 +7,7 @@
         padding: 0 20px;
         max-height: 273px;
         white-space: nowrap;
+        transition: all 0.3s linear;
 
         .stripe-block {
             display: inline-block;
@@ -60,6 +61,11 @@
         }
     }
 
+    @media (min-width: 2100px) {
+        &.max-container {
+            width: calc(84% - 70px);
+        }
+    }
     @media (max-width: 1549px) {
         .stripe-btn {
             h5 {
@@ -245,7 +251,7 @@
             }
         }
     }
-    @media (max-width: 699px) {
+    @media (max-width: 629px) {
         .stripe-btn {
             img {
                 &.phone-image {
@@ -264,7 +270,7 @@
             }
         }
     }
-    @media (max-width: 699px) {
+    @media (max-width: 489px) {
         .stripe-btn {
             max-height: 185px;
 
@@ -284,7 +290,7 @@
             }
         }
     }
-    @media (max-width: 699px) {
+    @media (max-width: 429px) {
         padding-top: 2px;
 
         .stripe-btn {
@@ -317,3 +323,4 @@
         }
     }
 }
+

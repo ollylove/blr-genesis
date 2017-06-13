@@ -16,4 +16,22 @@
         z-index: 0;
         background: transparentize($dark-blue, 0.1);
     }
+
+    @media (min-width: 768px) {
+        animation: padding-top 1s ease-out;
+
+        * {
+            animation: header-elements 1s ease-out;
+        }
+
+        @keyframes padding-top {
+            from {padding-top: 200px}
+            to {padding-top: 100px}
+        }
+        
+        @keyframes header-elements {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+    }
 }
