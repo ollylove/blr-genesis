@@ -23,35 +23,26 @@ $(document).ready(function () {
 
     $(".news-filter button").on("click", function (e) {
         e.preventDefault();
-        var tag = $(this).attr("data-tag");
-        var newsItem = $(".news-container .news-article");
+        var filterValue = $( this ).attr('data-tag');
 
         if ($(this).hasClass("all-active")) {
             $(".news-filter button").removeClass("all-active active");
             $(this).addClass("active");
-            newsItem.removeClass("active");
-            newsItem.each(function () {
-                if ($(this).hasClass(tag)) {
-                    $(this).toggleClass("active")
-                }
-            });
-            $(".news-container .col-3").addClass("full-width");
+            $grid.isotope({ filter: filterValue });
         }
         else if ($(this).hasClass("active")) {
             $(".news-filter button").removeClass("active").addClass("all-active");
-            newsItem.addClass("active");
-            $(".news-container .col-3").removeClass("full-width");
+            $grid.isotope({ filter: '*' });
         }
         else {
             $(".news-filter button").removeClass("active");
             $(this).addClass("active");
-            newsItem.removeClass("active");
-            newsItem.each(function () {
-                if ($(this).hasClass(tag)) {
-                    $(this).toggleClass("active")
-                }
-            });
-            $(".news-container .col-3").addClass("full-width");
+            $grid.isotope({ filter: filterValue });
         }
-    })
+    });
+
+    var $grid = $('.news-container').isotope({
+        itemSelector: '.news-article',
+        layoutMode: 'masonry'
+    });
 });

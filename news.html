@@ -38,9 +38,9 @@
 
         <!-- news filter -->
         <div class="news-filter max-container">
-            <button class="all-active" data-tag="press-release">Press releases <span></span></button>
-            <button class="all-active" data-tag="article">Articles <span></span></button>
-            <button class="all-active" data-tag="event">Events <span></span></button>
+            <button class="all-active" data-tag=".press-release">Press releases <span></span></button>
+            <button class="all-active" data-tag=".article">Articles <span></span></button>
+            <button class="all-active" data-tag=".event">Events <span></span></button>
         </div>
 
     </div>
@@ -48,40 +48,38 @@
     <!-- news items big container (needed for the filter) -->
     <div class="news-container max-container">
 
-        <!-- news items column left -->
-        <div class="col-3 pull-left">
-            <!-- news article with 'press release' news type as class -->
-            <div class="news-article white-bg active press-release">
+        <!-- news article with 'press release' news type as class -->
+        <div class="news-article white-bg active press-release">
 
-                <!-- media container (image, video, or empty) -->
-                <div class="media-wrapper dark-blue-bg">
-                    <img src="img/news1.jpg" alt="news-img-title">
-                </div>
-
-                <!-- news content -->
-                <div class="news-text white-bg">
-
-                    <!-- type and date -->
-                    <span class="news-type pull-left">In the news</span>
-                    <span class="news-date pull-right"><i>July 04, 2017</i></span>
-                    <div class="clear"></div>
-
-                    <!-- title -->
-                    <h3>BlueLine Rental Partners with OEMs for Large Equipment Rodeo</h3>
-
-                    <!-- paragraph -->
-                    <p>
-                        Logistical challenges around wastewater treatment in Texas are complex and can be difficult to overcome due to the geographical spread ...
-                    </p>
-
-                    <!-- read more btn -->
-                    <a href="news-inner.html" class="read-more">Read more</a>
-
-                </div>
+            <!-- media container (image, video, or empty) -->
+            <div class="media-wrapper dark-blue-bg">
+                <img src="img/news1.jpg" alt="news-img-title">
             </div>
 
-            <!-- news article with 'press release' news type as class -->
-            <div class="news-article white-bg active press-release">
+            <!-- news content -->
+            <div class="news-text white-bg">
+
+                <!-- type and date -->
+                <span class="news-type pull-left">In the news</span>
+                <span class="news-date pull-right"><i>July 04, 2017</i></span>
+                <div class="clear"></div>
+
+                <!-- title -->
+                <h3>BlueLine Rental Partners with OEMs for Large Equipment Rodeo</h3>
+
+                <!-- paragraph -->
+                <p>
+                    Logistical challenges around wastewater treatment in Texas are complex and can be difficult to overcome due to the geographical spread ...
+                </p>
+
+                <!-- read more btn -->
+                <a href="news-inner.html" class="read-more">Read more</a>
+
+            </div>
+        </div>
+
+        <!-- news article with 'press release' news type as class -->
+        <div class="news-article white-bg active press-release">
 
                 <!-- media container (image, video, or empty) -->
                 <div class="media-wrapper dark-blue-bg">
@@ -109,40 +107,67 @@
 
                 </div>
             </div>
+
+        <!-- news article with 'article' news type as class -->
+        <div class="news-article white-bg active article">
+
+            <!-- media container (image, video, or empty) -->
+            <div class="media-wrapper dark-blue-bg"></div>
+
+            <!-- news content -->
+            <div class="news-text white-bg">
+
+                <!-- type and date -->
+                <span class="news-type pull-left">Know how</span>
+                <span class="news-date pull-right"><i>July 04, 2017</i></span>
+                <div class="clear"></div>
+
+                <!-- title -->
+                <h3>BlueLine in the Digital Age</h3>
+
+                <!-- paragraph -->
+                <p>
+                    Logistical challenges around wastewater treatment in Texas are complex and can be difficult to overcome due to the geographical spread ...
+                </p>
+
+                <!-- read more btn -->
+                <a href="" class="read-more">Read more</a>
+
+            </div>
         </div>
 
-        <!-- news items column middle -->
-        <div class="col-3 pull-left">
-            <!-- news article with 'article' news type as class -->
-            <div class="news-article white-bg active article">
+        <!-- news article with 'article' news type as class -->
+        <div data-filter="article" class="news-article white-bg active article">
 
-                <!-- media container (image, video, or empty) -->
-                <div class="media-wrapper dark-blue-bg"></div>
-
-                <!-- news content -->
-                <div class="news-text white-bg">
-
-                    <!-- type and date -->
-                    <span class="news-type pull-left">Know how</span>
-                    <span class="news-date pull-right"><i>July 04, 2017</i></span>
-                    <div class="clear"></div>
-
-                    <!-- title -->
-                    <h3>BlueLine in the Digital Age</h3>
-
-                    <!-- paragraph -->
-                    <p>
-                        Logistical challenges around wastewater treatment in Texas are complex and can be difficult to overcome due to the geographical spread ...
-                    </p>
-
-                    <!-- read more btn -->
-                    <a href="" class="read-more">Read more</a>
-
-                </div>
+            <!-- media container (image, video, or empty) -->
+            <div class="media-wrapper dark-blue-bg">
+                <img src="img/news3.jpg" alt="news-img-title">
             </div>
 
-            <!-- news article with 'article' news type as class -->
-            <div class="news-article white-bg active article">
+            <!-- news content -->
+            <div class="news-text white-bg">
+
+                <!-- type and date -->
+                <span class="news-type pull-left">Equipment review</span>
+                <span class="news-date pull-right"><i>July 04, 2017</i></span>
+                <div class="clear"></div>
+
+                <!-- title -->
+                <h3>Heart of an Independent</h3>
+
+                <!-- paragraph -->
+                <p>
+                    Logistical challenges around wastewater treatment in Texas are complex and can be difficult to overcome due to the geographical spread ...
+                </p>
+
+                <!-- read more btn -->
+                <a href="" class="read-more">Read more</a>
+
+            </div>
+        </div>
+
+        <!-- news article with 'article' news type as class -->
+        <div data-filter="article" class="news-article white-bg active article">
 
                 <!-- media container (image, video, or empty) -->
                 <div class="media-wrapper dark-blue-bg">
@@ -171,77 +196,80 @@
                 </div>
             </div>
 
-            <!-- news article with 'article' news type as class -->
-            <div class="news-article white-bg active article">
+        <!-- news article with EVENT news type as class -->
+        <div data-filter="event" class="news-article white-bg active event">
+            <div class="news-text">
 
-                <!-- media container (image, video, or empty) -->
-                <div class="media-wrapper dark-blue-bg">
-                    <img src="img/news3.jpg" alt="news-img-title">
+                <!-- event news header -->
+                <div class="event-header light-blue-bg">
+
+                    <!-- type -->
+                    <span class="news-type">Event</span>
+
+                    <!-- title -->
+                    <h3 class="white-font-color">Greater Dallas Veterans<br>Job Fair</h3>
+
+                    <!-- date and location -->
+                    <span class="news-date pull-left">July 04, 2017</span>
+                    <span class="news-location pull-right">Hurst, TX</span>
+                    <div class="clear"></div>
+
                 </div>
 
                 <!-- news content -->
-                <div class="news-text white-bg">
-
-                    <!-- type and date -->
-                    <span class="news-type pull-left">Equipment review</span>
-                    <span class="news-date pull-right"><i>July 04, 2017</i></span>
-                    <div class="clear"></div>
-
-                    <!-- title -->
-                    <h3>Heart of an Independent</h3>
+                <div class="event-text white-bg">
 
                     <!-- paragraph -->
                     <p>
-                        Logistical challenges around wastewater treatment in Texas are complex and can be difficult to overcome due to the geographical spread ...
+                        Stop by the BlueLine Rental booth at the Greater Dallas Veterans Job Fair to learn more about our company and talk with hiring managers about career opportunities.
                     </p>
 
-                    <!-- read more btn -->
-                    <a href="" class="read-more">Read more</a>
+                    <!-- view event btn -->
+                    <a href="" class="btn light-blue-btn dark-blue-hover-btn">View event details</a>
 
                 </div>
+
             </div>
         </div>
 
-        <!-- news items column right -->
-        <div class="col-3 pull-left">
-            <!-- news article with EVENT news type as class -->
-            <div class="news-article white-bg active event">
-                <div class="news-text">
+        <!-- news article with EVENT news type as class -->
+        <div data-filter="event" class="news-article white-bg active event">
+            <div class="news-text">
 
-                    <!-- event news header -->
-                    <div class="event-header light-blue-bg">
+                <!-- event news header -->
+                <div class="event-header light-blue-bg">
 
-                        <!-- type -->
-                        <span class="news-type">Event</span>
+                    <!-- type -->
+                    <span class="news-type">Event</span>
 
-                        <!-- title -->
-                        <h3 class="white-font-color">Greater Dallas Veterans<br>Job Fair</h3>
+                    <!-- title -->
+                    <h3 class="white-font-color">San Antonio Veterans<br>Job Fair</h3>
 
-                        <!-- date and location -->
-                        <span class="news-date pull-left">July 04, 2017</span>
-                        <span class="news-location pull-right">Hurst, TX</span>
-                        <div class="clear"></div>
-
-                    </div>
-
-                    <!-- news content -->
-                    <div class="event-text white-bg">
-
-                        <!-- paragraph -->
-                        <p>
-                            Stop by the BlueLine Rental booth at the Greater Dallas Veterans Job Fair to learn more about our company and talk with hiring managers about career opportunities.
-                        </p>
-
-                        <!-- view event btn -->
-                        <a href="" class="btn light-blue-btn dark-blue-hover-btn">View event details</a>
-
-                    </div>
+                    <!-- date and location -->
+                    <span class="news-date pull-left">July 04, 2017</span>
+                    <span class="news-location pull-right">Hurst, TX</span>
+                    <div class="clear"></div>
 
                 </div>
-            </div>
 
-            <!-- news article with EVENT news type as class -->
-            <div class="news-article white-bg active event">
+                <!-- news content -->
+                <div class="event-text white-bg">
+
+                    <!-- paragraph -->
+                    <p>
+                        Stop by the BlueLine Rental booth at the Greater Dallas Veterans Job Fair to learn more about our company and talk with hiring managers about career opportunities.
+                    </p>
+
+                    <!-- view event btn -->
+                    <a href="" class="btn light-blue-btn dark-blue-hover-btn">View event details</a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- news article with EVENT news type as class -->
+        <div data-filter="event" class="news-article white-bg active event">
                 <div class="news-text">
 
                     <!-- event news header -->
@@ -275,43 +303,6 @@
 
                 </div>
             </div>
-
-            <!-- news article with EVENT news type as class -->
-            <div class="news-article white-bg active event">
-                <div class="news-text">
-
-                    <!-- event news header -->
-                    <div class="event-header light-blue-bg">
-
-                        <!-- type -->
-                        <span class="news-type">Event</span>
-
-                        <!-- title -->
-                        <h3 class="white-font-color">San Antonio Veterans<br>Job Fair</h3>
-
-                        <!-- date and location -->
-                        <span class="news-date pull-left">July 04, 2017</span>
-                        <span class="news-location pull-right">Hurst, TX</span>
-                        <div class="clear"></div>
-
-                    </div>
-
-                    <!-- news content -->
-                    <div class="event-text white-bg">
-
-                        <!-- paragraph -->
-                        <p>
-                            Stop by the BlueLine Rental booth at the Greater Dallas Veterans Job Fair to learn more about our company and talk with hiring managers about career opportunities.
-                        </p>
-
-                        <!-- view event btn -->
-                        <a href="" class="btn light-blue-btn dark-blue-hover-btn">View event details</a>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
 
         <div class="clear"></div>
     </div>
@@ -394,6 +385,7 @@
 
     <!-- jQuery and custom scripts -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>
