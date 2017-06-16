@@ -20,6 +20,10 @@
 @import "headers/header-news";
 @import "headers/header-news-inner";
 @import "headers/header-landing";
+@import "headers/header-careers";
+@import "headers/header-about";
+@import "headers/header-leadership";
+@import "headers/header-resources";
 
 // import elements and components
 
@@ -42,6 +46,24 @@
 @import "sections/landing/landing-testimonials";
 @import "sections/landing/landing-how-we-work";
 @import "sections/landing/landing-bottom-stripe";
+@import "sections/careers/careers-first-box";
+@import "sections/careers/careers-hot-jobs";
+@import "sections/careers/careers-boxes";
+@import "sections/careers/careers-rewards";
+@import "sections/careers/careers-search-open-positions";
+@import "sections/about/about-first-box";
+@import "sections/about/about-stats";
+@import "sections/about/about-mission";
+@import "sections/about/about-values";
+@import "sections/about/about-articles";
+@import "sections/about/about-safety";
+@import "sections/leadership/leadership-first-box";
+@import "sections/leadership/leadership-members";
+@import "sections/leadership/leadership-contact";
+@import "sections/resources/resources-first-box";
+@import "sections/resources/resources-services";
+@import "sections/resources/resources-brands";
+@import "sections/resources/resources-faq";
 
 // import footer
 

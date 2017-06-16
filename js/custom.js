@@ -21,7 +21,7 @@ $(document).ready(function () {
         });
     }
 
-    $(".news-filter button").on("click", function (e) {
+    /*$(".news-filter button").on("click", function (e) {
         e.preventDefault();
         var filterValue = $( this ).attr('data-tag');
 
@@ -44,5 +44,25 @@ $(document).ready(function () {
     var $grid = $('.news-container').isotope({
         itemSelector: '.news-article',
         layoutMode: 'masonry'
+    });*/
+
+    $(".resources-faq-navigation ul li a").on("click", function () {
+        $(this).parents("ul").find(".active").removeClass("active");
+        $(this).addClass("active");
+
+        var target = $(this.getAttribute('href'));
+        if(target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
     });
+
+    $(".resources-faq-questions h6").on("click", function () {
+        $(this).parent().find(".active").not($(this)).removeClass("active");
+        $(this).toggleClass("active");
+    });
+
+    /*$('.resources-faq-navigation').Stickyfill();*/
 });

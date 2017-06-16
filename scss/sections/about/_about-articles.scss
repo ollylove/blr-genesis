@@ -1,0 +1,168 @@
+.about-articles {
+    font-size: 0;
+
+    a {
+        display: inline-block;
+        vertical-align: top;
+        padding: 25px 45px;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 33.33%;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            transition: background 0.3s linear;
+        }
+
+        h5 {
+            @include font-style('oswald', 40px, 400);
+            text-transform: uppercase;
+            margin: 0 0 12px 0;
+        }
+
+        p {
+            @include font-style('open sans', 27px, 300);
+            line-height: 144%;
+            margin: 0 0 55px 0;
+            height: 115px;
+            overflow: hidden;
+        }
+
+        .btn {
+            display: inline-block;
+            transition: all 0.3s linear;
+        }
+
+        &.light {
+            &:after {
+                background: transparentize($white, 0.2);
+            }
+
+            &:hover:after {
+                background: transparentize($white, 0.05);
+            }
+
+            h5, p {
+                color: $dark-blue;
+            }
+
+            .btn {
+                @include btn($dark-blue);
+
+                &:hover {
+                    @include btn($light-blue);
+                }
+            }
+        }
+
+        &.middle {
+            &:after {
+                background: transparentize($light-blue, 0.2);
+            }
+
+            &:hover:after {
+                background: transparentize($light-blue, 0.05);
+            }
+
+            h5, p {
+                color: $white;
+            }
+
+            .btn {
+                @include btn($white);
+
+                &:hover {
+                    @include btn($dark-blue);
+                }
+            }
+        }
+
+        &.dark {
+            &:after {
+                background: transparentize($dark-blue, 0.2);
+            }
+
+            &:hover:after {
+                background: transparentize($dark-blue, 0.05);
+            }
+
+            h5, p {
+                color: $white;
+            }
+
+            .btn {
+                @include btn($white);
+
+                &:hover {
+                    @include btn($light-blue);
+                }
+            }
+        }
+
+        @media (max-width: 1499px) {
+            padding: 25px;
+
+            h5 {
+                font-size: 34px;
+            }
+
+            p {
+                height: 58px;
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+        }
+        @media (max-width: 1199px) {
+            padding: 20px;
+
+            h5 {
+                font-size: 30px;
+            }
+
+            p {
+                height: 77px;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+        }
+        @media (max-width: 991px) {
+            h5 {
+                font-size: 26px;
+            }
+
+            p {
+                height: 70px;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 40px;
+
+            p {
+                height: auto;
+            }
+        }
+        @media (max-width: 400px) {
+            padding: 30px 40px;
+
+            h5 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+

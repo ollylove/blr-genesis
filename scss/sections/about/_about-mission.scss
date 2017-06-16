@@ -1,0 +1,156 @@
+.about-mission {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background: transparentize($dark-blue, 0.2);
+    }
+
+    > div {
+        padding: 6.7% 0 5%;
+        width: calc(84% - 30px);
+        margin: 0 auto;
+    }
+
+    h2 {
+        @include font-style('oswald', 80px, 700);
+        margin: 0 0 43px 0;
+        line-height: 130%;
+        text-transform: uppercase;
+        width: 68%;
+        color: $white;
+    }
+
+    p {
+        @include font-style('open sans', 30px, 300);
+        line-height: 130%;
+        margin: 0 0 40px 0;
+        width: 78%;
+        color: $white;
+
+        &.about-mission-intro {
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+
+        strong {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+
+    @media (max-width: 1699px) {
+        h2 {
+            width: 78%;
+        }
+
+        p {
+            width: 88%;
+        }
+    }
+    @media (max-width: 1499px) {
+        > div {
+            padding: 5% 0 4%;
+        }
+
+        h2 {
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 150%;
+            margin-bottom: 30px;
+
+            &.about-mission-intro {
+                font-size: 26px;
+            }
+        }
+    }
+    @media (max-width: 1199px) {
+        > div {
+            padding: 4% 0 3%;
+            width: calc(100% - 40px);
+        }
+
+        h2 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+
+            &.about-mission-intro {
+                font-size: 22px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        > div {
+            padding: 30px 30px 20px;
+        }
+
+        h2 {
+            font-size: 44px;
+        }
+
+        p {
+            font-size: 18px;
+
+            &.about-mission-intro {
+                font-size: 20px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        h2 {
+            font-size: 38px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 20px;
+
+            &.about-mission-intro {
+                font-size: 18px;
+            }
+        }
+    }
+    @media (max-width: 699px) {
+        h2 {
+            font-size: 36px;
+            font-weight: 400;
+        }
+    }
+    @media (max-width: 400px) {
+        > div {
+            padding: 25px 20px 10px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 14px;
+
+            &.about-mission-intro {
+                font-size: 16px;
+            }
+        }
+    }
+}
+

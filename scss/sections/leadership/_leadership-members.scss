@@ -1,0 +1,200 @@
+.leadership-members {
+    font-size: 0;
+    padding: 0 15px 35px;
+
+    .leadership-member {
+        display: inline-block;
+        vertical-align: top;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        width: calc(33.33% - 40px);
+        margin: 0 20px 30px;
+        height: 0;
+        padding-bottom: 44%;
+        cursor: pointer;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            background: transparentize($dark-blue, 0.2);
+            transition: top 0.3s linear;
+        }
+
+        > div {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0 30px 60px;
+        }
+
+        h5 {
+            @include font-style('open sans', 45px, 700);
+            color: $white;
+            margin: 0;
+        }
+
+        h6 {
+            @include font-style('open sans', 30px, 300);
+            color: $light-blue;
+            margin: 5px 0 20px 0;
+            text-transform: uppercase;
+        }
+
+        p {
+            @include font-style('open sans', 22px, 300);
+            color: $white;
+            margin: 0;
+            line-height: 155%;
+            opacity: 0;
+            max-height: 75px;
+            overflow: hidden;
+            transition: all 0.3s linear;
+        }
+
+        &:hover {
+            &:after {
+                top: 0;
+            }
+
+            p {
+                max-height: 550px;
+                opacity: 1;
+            }
+        }
+    }
+
+    @media (min-width: 2100px) {
+        padding-left: 0;
+        padding-right: 0;
+
+        &.max-container {
+            width: calc(84% + 10px);
+        }
+    }
+    @media (max-width: 1499px) {
+        padding-left: 0;
+        padding-right: 0;
+
+        .leadership-member {
+            > div {
+                padding-bottom: 30px;
+            }
+
+            h5 {
+                font-size: 38px;
+                line-height: 120%;
+            }
+
+            h6 {
+                font-size: 26px;
+                line-height: 120%;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    @media (max-width: 1199px) {
+        .leadership-member {
+            > div {
+                padding: 20px;
+            }
+
+            h5 {
+                font-size: 30px;
+            }
+
+            h6 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                max-height: 95px;
+                opacity: 1;
+            }
+        }
+    }
+    @media (max-width: 1079px) {
+        .leadership-member {
+            &:after {
+                top: 40%;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .leadership-member {
+            width: calc(50% - 40px);
+        }
+    }
+    @media (max-width: 829px) {
+        .leadership-member p {
+            max-height: 75px;
+        }
+    }
+    @media (max-width: 767px) {
+        .leadership-member {
+            padding-bottom: 50%;
+
+            &:after {
+                top: 60%;
+            }
+
+            h5 {
+                font-size: 26px;
+            }
+
+            h6 {
+                font-size: 18px;
+                margin: 10px 0 0 0;
+            }
+
+            p, &:hover p {
+                max-height: 0;
+            }
+        }
+    }
+    @media (max-width: 699px) {
+        .leadership-member:after {
+            top: 50%;
+        }
+    }
+    @media (max-width: 549px) {
+        .leadership-member {
+            width: calc(100% - 40px);
+            padding-bottom: 100%;
+
+            &:after {
+                display: none;
+            }
+
+            > div {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 0;
+                    background: transparentize($dark-blue, 0.2);
+                }
+            }
+        }
+    }
+    @media (max-width: 400px) {
+        .leadership-member h5 {
+            font-size: 24px;
+        }
+    }
+}
+

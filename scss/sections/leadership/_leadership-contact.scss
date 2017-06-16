@@ -1,0 +1,130 @@
+.leadership-contact {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7.2% 8.5%;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background: transparentize($dark-blue, 0.2);
+    }
+
+    h2, h3, a {
+        color: $white;
+    }
+
+    h2 {
+        @include font-style('oswald', 80px, 700);
+        margin: 0 0 80px 0;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        @include font-style('open sans', 30px, 300);
+        margin: 0 0 35px 0;
+        line-height: 138%;
+    }
+
+    p {
+        margin: 0 0 55px 0;
+
+        strong {
+            @include font-style('open sans', 22px, 700);
+            color: $light-blue;
+            text-transform: uppercase;
+            display: block;
+            line-height: 100%;
+            margin-bottom: 20px;
+        }
+
+        a {
+            @include font-style('open sans', 21px, 300);
+            display: inline-block;
+            line-height: 100%;
+
+            &:hover {
+                color: $light-blue;
+            }
+        }
+
+        &:last-of-type {
+            margin-bottom: 25px;
+        }
+    }
+
+    .btn {
+        display: inline-block;
+    }
+
+    @media (max-width: 1499px) {
+        padding: 5% 8%;
+
+        h2 {
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+    }
+    @media (max-width: 1199px) {
+        h2 {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+    }
+    @media (max-width: 991px) {
+        padding: 50px;
+
+        h2 {
+            font-size: 44px;
+        }
+    }
+    @media (max-width: 767px) {
+        padding: 50px 20px;
+
+        h2 {
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            margin-bottom: 30px;
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+    @media (max-width: 699px) {
+        h2 {
+            font-size: 36px;
+            font-weight: 400;
+        }
+    }
+    @media (max-width: 400px) {
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p a {
+            font-size: 16px;
+        }
+    }
+}
+

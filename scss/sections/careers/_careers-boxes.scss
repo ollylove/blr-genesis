@@ -1,0 +1,217 @@
+.careers-boxes {
+    font-size: 0;
+    width: calc(84% - 24px);
+    margin: 0 auto 45px auto;
+
+    h2 {
+        @include font-style('oswald', 72px, 400);
+        margin: 0 0 98px 0;
+        line-height: 100%;
+    }
+
+    .careers-box {
+        display: inline-block;
+        width: calc(33.33% - 6px);
+        margin: 0 3px 20px 3px;
+        height: 0;
+        padding-bottom: 32.7%;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 43%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            background: transparentize($dark-blue, 0.2);
+            transition: top 0.3s linear;
+        }
+
+        div {
+            padding: 0 30px 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            h5 {
+                @include font-style('open sans', 44px, 700);
+                margin: 0 0 10px 0;
+            }
+
+            p {
+                @include font-style('open sans', 27px, 300);
+                line-height: 120%;
+                margin: 0;
+                max-height: 65px;
+                overflow: hidden;
+            }
+
+            .btn {
+                display: inline-block;
+                opacity: 0;
+                max-height: 0;
+                visibility: hidden;
+                transition: all 0.3s linear;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin: 0;
+            }
+        }
+
+        &:hover {
+            &:after {
+                top: 0;
+            }
+
+            div {
+                .btn {
+                    opacity: 1;
+                    visibility: visible;
+                    max-height: 400px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    margin: 40px 0 30px 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1499px) {
+        h2 {
+            font-size: 60px;
+        }
+
+        &:after {
+            top: 35%;
+        }
+
+        .careers-box div {
+            h5 {
+                font-size: 38px;
+                line-height: 120%;
+            }
+
+            p {
+                font-size: 24px;
+                max-height: 57px;
+            }
+        }
+    }
+    @media (max-width: 1199px) {
+        width: calc(100% - 40px);
+
+        h2 {
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+
+        .careers-box {
+            &:after {
+                top: 0;
+            }
+
+            div {
+                padding: 0 20px;
+
+                h5 {
+                    font-size: 30px;
+                    line-height: 120%;
+                }
+
+                p {
+                    font-size: 20px;
+                    max-height: 50px;
+                }
+
+                .btn {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    margin: 20px 0;
+                    opacity: 1;
+                    max-height: none;
+                    visibility: visible;
+                }
+            }
+
+            &:hover div .btn {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin: 20px 0;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        h2 {
+            font-size: 44px;
+        }
+
+        .careers-box {
+            margin-bottom: 10px;
+
+            div {
+                h5 {
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 18px;
+                    max-height: 44px;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        h2 {
+            font-size: 38px;
+            margin-bottom: 40px;
+        }
+
+        .careers-box {
+            width: 100%;
+            margin: 0 0 20px 0;
+            display: block;
+            padding-bottom: 0;
+            height: auto;
+
+            div {
+                position: relative;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 30px 30px 10px;
+
+                p {
+                    max-height: none;
+                }
+            }
+        }
+    }
+    @media (max-width: 400px) {
+        h2 {
+            font-size: 34px;
+            margin-bottom: 30px;
+            line-height: 140%;
+            padding: 0 20px;
+        }
+
+        .careers-box div {
+            padding: 20px 20px 0;
+
+            h5 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+    }
+}
+

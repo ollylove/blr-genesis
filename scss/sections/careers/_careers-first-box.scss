@@ -1,0 +1,155 @@
+.careers-first-box {
+    width: calc(84% - 30px);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 5.9% 8.3% 20px 8.3%;
+    margin: -351px auto 0 auto;
+
+    h2 {
+        @include font-style('oswald', 81px, 400);
+        margin: 0;
+        line-height: 120%;
+    }
+
+    h3 {
+        @include font-style('open sans', 37px, 300);
+        text-transform: uppercase;
+        line-height: 120%;
+        padding: 20px 0 40px 0;
+        margin: 0;
+    }
+
+    p {
+        @include font-style('open sans', 21px, 300);
+        width: 60%;
+        line-height: 186%;
+        margin: 0 0 40px 0;
+    }
+
+    .btn {
+        margin: 0 0 40px 0;
+        float: left;
+        display: block;
+    }
+    
+    img {
+        position: absolute;
+        right: -45px;
+        bottom: 0;
+        z-index: 0;
+        max-width: 30%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+    
+    @media (max-width: 1759px) {
+        img {
+            max-width: 25%;
+        }
+    }
+    @media (max-width: 1499px) {
+        padding: 5% 5% 20px 5%;
+
+        h2 {
+            font-size: 70px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 1199px) {
+        padding: 4% 4% 0 4%;
+        width: calc(100% - 40px);
+        margin: -170px auto 0 auto;
+
+        h2 {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            margin-bottom: 30px;
+        }
+
+        img {
+            right: -20px;
+        }
+    }
+    @media (max-width: 991px) {
+        padding: 30px 30px 10px 30px;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        img {
+            max-width: 30%;
+        }
+    }
+    @media (max-width: 767px) {
+        margin: -100px auto 0 auto;
+
+        h2 {
+            font-size: 34px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        img {
+            max-width: 35%;
+        }
+    }
+    @media (max-width: 599px) {
+        p {
+            width: 100%;
+        }
+
+        img {
+            max-width: 50%;
+            opacity: 0.1;
+        }
+    }
+    @media (max-width: 400px) {
+        padding: 20px 20px 0 20px;
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        img {
+            max-width: 80%;
+        }
+    }
+}

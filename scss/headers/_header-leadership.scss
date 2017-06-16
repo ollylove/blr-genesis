@@ -1,0 +1,47 @@
+.header-leadership {
+    padding-bottom: 411px;
+
+    h1 {
+        margin: 0 auto;
+        line-height: 100%;
+        width: 84%;
+        text-transform: uppercase;
+        @include font-style('oswald', 56px, 700);
+        padding-top: 153px;
+    }
+
+    @media (max-width: 1499px) {
+        h1 {
+            font-size: 50px;
+            padding-top: 120px;
+        }
+    }
+    @media (max-width: 1199px) {
+        padding-bottom: 185px;
+
+        h1 {
+            font-size: 40px;
+            padding-top: 50px;
+            width: 100%;
+        }
+    }
+    @media (max-width: 991px) {
+        h1 {
+            font-size: 30px;
+            padding-top: 30px;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 115px;
+
+        h1 {
+            padding-top: 10px;
+        }
+    }
+    @media (max-width: 400px) {
+        h1 {
+            padding-top: 0;
+            line-height: 120%;
+        }
+    }
+}

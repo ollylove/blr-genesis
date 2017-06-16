@@ -1,0 +1,78 @@
+.about-stats {
+    p {
+        @include font-style('open sans', 36px, 300);
+        color: $white;
+        line-height: 120%;
+        display: inline-block;
+        padding: 1.5% 6% 3%;
+        margin: 0;
+        text-transform: uppercase;
+
+        strong {
+            display: block;
+            @include font-style('oswald', 98px, 700);
+            line-height: 150%;
+        }
+    }
+
+    @media (max-width: 1499px) {
+        p {
+            font-size: 30px;
+
+            strong {
+                font-size: 80px;
+            }
+        }
+    }
+    @media (max-width: 1199px) {
+        p {
+            font-size: 22px;
+
+            strong {
+                font-size: 70px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        p {
+            font-size: 20px;
+            padding-top: 2.5%;
+            padding-bottom: 4%;
+
+            strong {
+                font-size: 60px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        p {
+            font-size: 18px;
+            padding-left: 3%;
+            padding-right: 3%;
+
+            strong {
+                font-size: 50px;
+            }
+        }
+    }
+    @media (max-width: 499px) {
+        p {
+            font-size: 14px;
+            padding-left: 2%;
+            padding-right: 2%;
+            line-height: 150%;
+
+            strong {
+                font-size: 40px;
+            }
+        }
+    }
+    @media (max-width: 400px) {
+        p {
+            strong {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
